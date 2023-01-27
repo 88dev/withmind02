@@ -4,14 +4,542 @@
 <meta charset="UTF-8">
 <meta name='viewport' content='width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0' />
 <meta http-equiv='Content-Security-Policy' content='upgrade-insecure-requests'>
-<link rel='styleSheet' href='/withmind/withmind2022/00.default/css/reset.css' type='text/css'></link>
-<title></title>
+<link rel='styleSheet' href='/01.withmind.net/ver4/css/reset.css' type='text/css'></link>
+<link rel='styleSheet' href='/01.withmind.net/ver4/css/style.css' type='text/css'></link>
+<link rel='styleSheet' href='/01.withmind.net/ver4/css/web.5fa3ac6c.css' type='text/css'></link>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+<link href="https://font.elice.io/EliceDigitalBaeum.css" rel="stylesheet" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+<title>위드마인드</title>
+<style>
+</style>
 </head>
 <body>
-    <h1>Hello World!</h1>
-</body>
-<script src='http://code.jquery.com/jquery-latest.min.js'></script>
-<script>
+    <header>
+        <section class="header">
+            <h1 class="h1"></h1>
+            <ul id="gnb">
+                <li><a class="btn_company">COMPANY</a></li>
+                <li><a class="btn_technology">TECHNOLOGY</a></li>
+                <li><a class="btn_service">SERVICE</a></li>
+                <li><a class="btn_news">NEWS</a></li>
+                <li><a class="btn_contact">CONTACT</a></li>
+            </ul>
+            <div class="wrap_hamburger">
+                <input type="checkbox" id="nav" name="nav" onclick="fnNav()" />
+                <label for="nav"></label>
+            </div>
+        </section>
+    </header>
+    <section class="main" id="main">
+        <section class="bg_video">
+            <video class="bg_video__content" autoplay muted loop>
+                <source src="/01.withmind.net/ver4/video/withmind2.mp4" type="video/mp4" />
+                <source src="/01.withmind.net/ver4/video/withmind2.webm" type="video/webm" />
+            </video>
+        </section>
+        <section class="wrap_txt">
+            <span data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-once="false">사람을 위한 인공지능</span>
+            <strong data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-once="false">WITHMIND</strong>
+        </section>
+    </section>
+    <section class="competition" id="company">
+        <section class="inner">
+            <h2>위드마인드만의 경쟁력으로<br>인간 삶의 혁신을 주도합니다.</h2>
+            <section class="wrap_cont">
+                <div>
+                    <b><span>차별화된</span>핵심 기술력</b>
+                    <p>음성데이터 기반 감정 분석, 생체데이터 기반 멀티모달 AI 모델, NLP(자연어 처리) 등 국내외 전문 기관들과 함께 구축한 차별화된 핵심기술로 더욱 정확하고 견고한 AI서비스를 제공합니다.</p>
+                </div>
+                <div>
+                    <b><span>산업 트렌드에 한발 앞선</span>시장 대응력</b>
+                    <p>정부 핵심 정책인 인공 지능 산업을 기반으로 개인화 사회에 걸맞은 사용자 맞춤형 서비스를 제공하여 뉴노멀 시대의 새로운 표준인 비대면 시장을 선도해 나갑니다. </p>
+                </div>
+            </section>
+        </section>
+    </section>
+    <section class="value">
+        <h4>VALUE</h4>
+        <h2>핵심가치</h2>
+        <section class="wrhttp://www.hbpaper.kr/ap_curtain" data-aos="fade-up">
+            <div class="foo" data-delighter></div>
+            <section class="wrap_box" data-delighter="start:0.7">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="wrap_value">
+                    <div class="wrap_flex">
+                        <img src="/01.withmind.net/ver4/images/icon_human.svg" />
+                        <div class="wrap_txt">
+                            <span>HUMAN</span>
+                            <b>사람</b>
+                            <p>사람을 위한 서비스를 생각합니다.</p>
+                        </div>
+                    </div>
+                    <div class="wrap_flex">
+                        <img src="/01.withmind.net/ver4/images/icon_future.svg" />
+                        <div class="wrap_txt">
+                            <span>FUTURE</span>
+                            <b>미래</b>
+                            <p>4차 산업 트렌드에 발맞추어<br>새로운 기술 개발을 선도합니다.</p>
+                        </div>
+                    </div>
+                    <div class="wrap_flex">
+                        <img src="/01.withmind.net/ver4/images/icon_respect.svg" />
+                        <div class="wrap_txt">
+                            <span>RESPECT</span>
+                            <b>존중</b>
+                            <p>존중과 배려에 최우선 가치를 둡니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+    <section class="technology" id="technology">
+        <section class="inner">
+            <h4>TECHNOLOGY</h4>
+            <h2>기술력</h2>
+            <p class="txt">총 8개의 AI엔진이 탑재된 AI 플랫폼 API를 통해,<br>위드마인드만의 차별화된 기술 서비스를 제공하고 있습니다.</p>
+            <img src="/01.withmind.net/ver4/images/img_tech.png" class="desktop" />
+            <img src="/01.withmind.net/ver4/images/img_tech_tablet.png" class="tablet" />
+            <img src="/01.withmind.net/ver4/images/img_tech_mobile.png" class="mobile" />
+        </section>
+    </section>
+    <section class="service" id="service">
+        <section class="inner">
+            <h4>SERVICE</h4>
+            <h2>서비스</h2>
+            <h5>AI HR+</h5>
+            <section class="wrap_item" data-aos="fade-up" data-aos-once="true">
+                <section class="item">
+                    <div class="wrap_img">
+                        <img src="/01.withmind.net/ver4/images/img_service01.png" />
+                    </div>
+                    <div class="wrap_txt">
+                        <strong>IM(아이엠) &IM-PRI</strong>
+                        <p>취업/입시 준비를 위한 <b>AI 면접 연습</b> 서비스</p>
+                    </div>
+                </section>
+                <section class="item">
+                    <div class="wrap_img">
+                        <img src="/01.withmind.net/ver4/images/img_service02.png" />
+                    </div>
+                    <div class="wrap_txt">
+                        <strong>IM-BIZ</strong>
+                        <p>채용 공고 등록부터 면접 결과 분석까지,<br>기업을 위한 <b>AI 채용 면접</b> 서비스</p>
+                    </div>
+                </section>
+            </section>
+            <section class="wrap_item" data-aos="fade-up" data-aos-once="true">
+                <section class="item">
+                    <div class="wrap_img">
+                        <img src="/01.withmind.net/ver4/images/img_service03.png" />
+                    </div>
+                    <div class="wrap_txt">
+                        <strong>IM-UNI</strong>
+                        <p>실시간 인공지능 분석을 통한 편리한 인재 선별,<br>기업을 위한 양방향 <b>AI 화상 면접</b> 서비스</p>
+                    </div>
+                </section>
+                <section class="item">
+                    <div class="wrap_img">
+                        <img src="/01.withmind.net/ver4/images/img_service04.png" />
+                    </div>
+                    <div class="wrap_txt">
+                        <strong>AI HR교육</strong>
+                        <p>AI분석을 통한 효과적인 직원교육,<br>AI 서비스직 트레이닝 솔루션</p>
+                    </div>
+                </section>
+            </section>
+            <section class="wrap_item" data-aos="fade-up" data-aos-once="true">
+                <section class="item">
+                    <h5>Data Security</h5>
+                    <div class="wrap_img">
+                        <img src="/01.withmind.net/ver4/images/img_service06.png" />
+                    </div>
+                    <div class="wrap_txt">
+                        <strong>FHE Cloud Drive</strong>
+                        <p>완전동형암호 기반 클라우드 드라이브 서비스</p>
+                        <p>국제 공동 R&D 선정 위드마인드, ETRI(국내), CSEM(스위스), ITER(이탈리아)</p>
+                    </div>
+                </section>
+                <section class="item">
+                    <h5>AI Healthcare</h5>
+                    <div class="wrap_img">
+                        <img src="/01.withmind.net/ver4/images/img_service05.png" />
+                    </div>
+                    <div class="wrap_txt">
+                        <strong>인지중재 치료 서비스</strong>
+                        <p>사용자 데이터를 통한 맞춤형 콘텐츠 제공<br>다중 영역 인지기능 향상 프로그램 시스템 구축</p>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </section>
+    <section class="history">
+        <section class="inner">
+            <h4>HISTORY</h4>
+            <h2>연혁</h2>
+            <p>위드마인드는 2017년 설립 이래, 매년 기술 발전과 사업 성장을 이루고 있습니다.  </p>
+            <section class="wrap_history">
+                <ul class="history_title">
+                    <li>2017~2018</li>
+                    <li>2019~2020</li>
+                    <li class="on">2021~현재</li>
+                </ul>
+                <section class="history_cont">
+                    <section>
+                        <section class="wrap_flex">
+                            <div>
+                                <span></span>
+                                <p>2017~2018 : Create</p>
+                            </div>
+                            <div>
+                                <b>2017</b>
+                                <ul>
+                                    <li><b>07</b>(주)위드마인드 설립</li>
+                                    <li><b>08</b>기업부설 연구소 설립</li>
+                                    <li><b>11</b>음성기반 감정분석 기술 개발</li>
+                                    <li><b>12</b>분당서울대 병원 음성감정분석 임상테스트</li>
+                                </ul>
+                                <b>2017</b>
+                                <ul>
+                                    <li><b>04</b>기술전문기업 협력 R&D (영상분석기술 도입)</li>
+                                    <li><b>06</b>AI면접 서비스 개발</li>
+                                    <li><b>09</b>영어 발음 교정 어플리케이션 APP ‘SPEAKING(스피킹)’ 런칭</li>
+                                    <li><b>11</b>표정 및 행동 AI 분석기술 협력개발</li>
+                                    <li><b>12</b>멀티모달 AI분석 시스템 개발</li>
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
+                    <section>
+                        <section class="wrap_flex">
+                            <div>
+                                <span></span>
+                                <p>2019~2020 : Model</p>
+                            </div>
+                            <div>
+                                <b>2019</b>
+                                <ul>
+                                    <li><b>01</b>인지중재 치료 서비스 시스템 구축</li>
+                                    <li><b>08</b>AI면접 서비스 Beta 런칭</li>
+                                    <li><b>12</b>nipa 진흥원장상 수상</li>
+                                </ul>
+                                <b>2020</b>
+                                <ul>
+                                    <li><b>03</b>온라인 채용 서비스 AI면접</li>
+                                    <li><b>05</b>SBA 취업캠프 AI면접 서비스</li>
+                                    <li class="blank">이화여대 인턴십 AI면접 서비스</li>
+                                    <li><b>06</b>KPC 2,000명 AI면접</li>
+                                    <li><b>08</b>ETRI Holdings 투자유치</li>
+                                    <li><b>09</b>본점 이전 및 연구소기업 등록</li>
+                                    <li><b>11</b>TIPS 선정</li>
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
+                    <section class="on">
+                        <section class="wrap_flex">
+                            <div>
+                                <span></span>
+                                <p>2021~현재 : Scaleup</p>
+                            </div>
+                            <div>
+                                <b>2021</b>
+                                <ul>
+                                    <li><b>01</b>서울창업허브 지점 설립</li>
+                                    <li class="blank">IBK창공(N15) 액셀러레이팅 선정</li>
+                                    <li class="blank">총10개 R&D 수행 (총 과제규모 약 20억)</li>
+                                    <li><b>03</b>AI CS교육 서비스 개발</li>
+                                    <li class="blank">대덕특구 엑셀러레이팅 선정</li>
+                                    <li><b>11</b>서울대, 인천시, 특성화고 70곳, 취업센터</li>
+                                </ul>
+                                <b>2022</b>
+                                <ul>
+                                    <li><b>01</b>메타버스 기반 AI화상면접 출시</li>
+                                    <li class="blank">싱가포르 법인설립(에듀샐러드)</li>
+                                    <li><b>02</b>AI기반 공급기업 4곳 선정</li>
+                                    <li><b>05</b>(주)미듬에듀기업직무교육 플랫폼 사업화 제휴</li>
+                                    <li><b>06</b>동부화재, 청호나이스 영업자 HR교육 서비스 협의</li>
+                                    <li><b>08</b>SBA 전체 입주스타트업 기업면접 서비스 제공</li>
+                                    <li><b>12</b>국제공동 R&D 선정</li>
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+    <section class="news" id="news">
+        <section class="inner">
+            <h4>NEWS</h4>
+            <div class="wrap_top">
+                <h2>새소식</h2>
+                <a href="/01.withmind.net/ver4/news.html" class="btn_more">더보기</a>
+            </div>
+            <section class="wrap_item">
+                <a href="/01.withmind.net/ver4/news-view.html" class="item">
+                    <div class="wrap_img">
+                        <span class="cover"></span>
+                        <img class="wrap_img" src="/01.withmind.net/ver4/images/news/news_20221219.jpg" />
+                    </div>
+                    <div class="wrap_tit">
+                        <strong>중진공 덕에 재창업 … 기술개발·영업도 '날개'</strong>
+                        <p class="ellipsis">4차 산업혁명 시대 기술 혁신에 따라 인공지능(AI)을 기반으로 음성과 감정을 인식하는 기술에 대한 수요가 나날이 증가하고 있다.</p>
+                        <span>2022. 12. 19</span>
+                    </div>
+                </a>
+                <a class="item">
+                    <div class="wrap_img">
+                        <span class="cover"></span>
+                        <img src="/01.withmind.net/ver4/images/news/news_20220803.jpg" />
+                    </div>
+                    <div class="wrap_tit">
+                        <strong>인터뷰마스터IM, AI면접으로 기업 인재상에 맞는 지원자 선별</strong>
+                        <p class="ellipsis">㈜위드마인드(대표 주민성)는 AI면접 서비스인 인터뷰마스터IM이 역량평가 기술을 탑재했다고 밝혔다.</p>
+                        <span>2022. 08. 03</span>
+                    </div>
+                </a>
+                <a class="item">
+                    <div class="wrap_img">
+                        <span class="cover"></span>
+                        <img src="/01.withmind.net/ver4/images/news/news_20220609.jpg" />
+                    </div>
+                    <div class="wrap_tit">
+                        <strong>위드마인드 '인터뷰마스터IM', 역량 평가하는 AI면접으로 리뉴얼</strong>
+                        <p class="ellipsis">㈜위드마인드(대표 주민성)가 지난달 30일, AI면접 서비스인 '인터뷰마스터 IM'의 리뉴얼을 진행했다고 밝혔다.</p>
+                        <span>2022. 06. 09</span>
+                    </div>
+                </a>
+            </section>
+            <a href="/01.withmind.net/ver4/news.html" class="btn_more">더보기</a>
+        </section>
+    </section>
+    <section class="client">
+        <h4>CLIENT</h4>
+        <h2>이미 수많은 기업, 공공기관, 교육기관, 컨설팅 업체가<br>위드마인드와 함께하고 있습니다.</h2>
+        <section class="wrap_marquee">
+            <div class="marquee">
+                <div class="marquee__group">
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_01.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_02.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_03.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_04.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_05.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_06.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_07.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_08.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_09.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_10.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_11.png" />
+                </div>
+                <div aria-hidden="true" class="marquee__group">
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_01.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_02.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_03.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_04.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_05.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_06.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_07.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_08.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_09.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_10.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_11.png" />
+                </div>
+            </div>
+            <div class="marquee marquee--reverse">
+                <div class="marquee__group">
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_12.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_13.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_14.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_15.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_16.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_17.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_18.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_19.jpg" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_20.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_21.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_22.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_23.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_24.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_25.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_26.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_27.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_28.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_29.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_30.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_31.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_32.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_33.png" />
+                </div>
+                
+                <div aria-hidden="true" class="marquee__group">
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_12.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_13.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_14.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_15.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_16.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_17.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_18.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_19.jpg" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_20.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_21.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_22.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_23.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_24.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_25.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_26.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_27.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_28.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_29.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_30.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_31.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_32.png" />
+                    <img src="/01.withmind.net/ver4/images/logo/img_logo_33.png" />
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="contact" id="contact">
+        <section class="inner">
+            <h4>CONTACT</h4>
+            <h2>오시는 길</h2>
+            <section class="wrap_map">
+                <section class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3212.1231998610924!2d127.36726348687304!3d36.382011482467774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35654a36c61b287f%3A0x8db8458da6e90e8d!2z64yA7KCE6rSR7Jet7IucIOycoOyEseq1rCDqsIDsoJXroZwgMjE4!5e0!3m2!1sko!2skr!4v1673314510122!5m2!1sko!2skr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <b>본사</b>
+                    <div>
+                        <p>대전광역시 유성구 가정로 218, 3층 302-2-3호 (주)위드마인드</p>
+                    </div>
+                </section>
+                <section class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.3495888131724!2d126.94787711558794!3d37.54682663301381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c98a19f5ee043%3A0xd91ee523e8ea4438!2z7ISc7Jq47Yq567OE7IucIOuniO2PrOq1rCDrsLHrspTroZwzMeq4uCAyMQ!5e0!3m2!1sko!2skr!4v1673313523796!5m2!1sko!2skr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <b>지점</b>
+                    <div>
+                        <p>서울특별시 마포구 백범로 31길 21, 서울창업허브 809호</p>
+                        <span>02-313-7705</span>
+                        <span>sales@withmind.net</span>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </section>
+    <section class="inquiry">
+        <section class="inner">
+            <h2>문의하기</h2>
+            <div class="tit_txt">
+                <p>문의하실 내용을 보내주시면, 확인후 최대한 빠른 시일 내 답변을 드리도록 하겠습니다.</p>
+                <span><em>*</em> 표시는 필수 입력 항목입니다.</span>
+            </div>
+            <form>
+                <section class="wrap_form">
+                    <div class="w_f">
+                        <div>
+                            <label><em>*</em> 성명</label>
+                            <input type="text" id="in_name" />
+                        </div>
+                        <div>
+                            <label><em>*</em> 회사/조직</label>
+                            <input type="text" id="in_company" />
+                        </div>
+                    </div>
+                    <div class="w_f">
+                        <div>
+                            <label><em>*</em> 연락처</label>
+                            <input type="text" id="in_tel" />
+                        </div>
+                        <div>
+                            <label><em>*</em> 이메일</label>
+                            <input type="text" id="in_email" />
+                        </div>
+                    </div>
+                    <div>
+                        <label><em>*</em> 문의 제목</label>
+                        <input type="text" id="in_title" />
+                    </div>
+                    <div>
+                        <label><em>*</em> 문의 내용</label>
+                        <textarea id="in_contents"></textarea>
+                    </div>
+                </section>
+                <div class="wrap_check">
+                    <div>
+                        <input type="checkbox" id="check" />
+                        <label for="check">개인정보 수집 및 이용목적에 동의합니다. </label>
+                        <button type="button" id="btn_more" class="btn btn-primary" data-toggle="modal" data-target="#privacy">[자세히 보기]</button>
+                    </div>
+                    <button type="button" id="inquiry_submit">문의하기</button>
+                </div>
+            </form>
 
+            <!-- Modal -->
+            <div class="modal fade" id="privacy" tabindex="-1" role="dialog" aria-hidden="true" data-keyboard="false">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <button type="button" class="close modal_close" data-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-body">
+                            <h2>개인정보 수집 및 이용</h2>
+                            <h3>개인정보의 수집 및 이용 목적</h3>
+                            <p>㈜위드마인드는 개인정보보호법 및 정보통신망 이용촉진 및 정보보호등에 관한 법률에 따라 정보 주체의 개인정보 및 권익을 보호하고 개인정보와 관련한 정보주체의 고충을 원활하게 처리할 수 있도록 다음과 같은 처리방침을 두고 있습니다. 회사가 수집한 개인정보는 다음의 목적을 위해 활용합니다.</p>
+                            <h4>1. 문의접수 및 처리결과 회신</h4>
+                            <h5>수집하는 개인정보 항목 및 수집방법</h5>
+                            <h5>[수집하는 개인정보 항목]</h5>
+                            <p>신청여부 식별 및 최적화 된 서비스 제공을 위해 아래와 같은 정보를 수집합니다. 이름, 연락처, 이메일, 회사명</p>
+                            <h5>[수집 방법]</h5>
+                            <p>홈페이지 자료/상담신청을 통한 수집<br>
+                                개인정보의 보유 및 이용기간<br>
+                                원칙적으로 개인정보 수집 및 이용 목적이 달성된 후에는<br>
+                                해당 정보를 지체없이 파기합니다.</p>
+                        </div>
+                        <div class="wrap_btn">
+                            <button type="button" class="btn_black" data-dismiss="modal" aria-label="Close" onclick="check()">확인 및 승인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </section>
+    <footer>
+        <section>
+            <h2><a href="/01.withmind.net/ver4/index.html">위드마인드</a></h2>
+            <section>
+                <ul>
+                    <li><a>이용약관</a></li>
+                    <li><a>개인정보처리방침</a></li>
+                </ul>
+                <div class="info">
+                    <div>(주)위드마인드</div>
+                    <div class="detail">
+                        <span>대표이사 : 주민성</span>
+                        <span>연구소 본점 : 대전광역시 유성구 가정로 218, 3층 302-2-3호</span>
+                        <span>서울지점 : 서울시 마포구 백범로 31길 21, 서울창업허브</span>
+                    </div>
+                    <div class="detail">
+                        <span>제휴문의 : info@withmind.net</span>
+                        <span>전화 : 02-313-7705 <em>평일 09:00 ~ 18:00 (주말, 공휴일 제외)</em></span>
+                        <span>사업자등록번호 : 794-87-00687</span>
+                        <span>통신판매업신고번호 : 2019-서울마포-2020호</span>
+                    </div>
+                </div>
+                <p>&copy; WITHMIND, ALL RIGHTS RESERVED.</p>
+            </section>
+        </section>
+    </footer>
+</body>
+<script src='/01.withmind.net/ver4/js/web.5fa3ac6c.js'></script>
+<script src='/01.withmind.net/ver4/js/jquery-3.4.1.min.js'></script>
+<script type="text/javascript" src="/01.withmind.net/ver4/plugin/delighters.js"></script>
+<script src='/01.withmind.net/ver4/js/common.js'></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+    function check(){
+        console.log("check");
+        $("#check").prop("checked", true);
+    }
 </script>
 </html>
