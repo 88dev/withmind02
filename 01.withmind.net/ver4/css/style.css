@@ -31,8 +31,9 @@ header.on {
 header.on .header ul li a {
     color: #333333;
 }
-header.detail {
+header.view {
     background: #FFFFFF;
+    border-bottom: 1px solid #EBEBEB;
 }
 header .header {
     display: flex;
@@ -443,6 +444,12 @@ h3 {
     transform: translateX(-50%);
     mix-blend-mode: screen;
 }
+.technology .desktop {
+    visibility: visible;
+}
+.technology .tablet, .technology .mobile {
+    visibility: hidden;
+}
 .service {
     background: #F6F6F6;
 }
@@ -585,20 +592,22 @@ h3 {
 .history_cont .wrap_flex ul .blank {
     padding-left: 35px;
 }
-/* .news {
-    background: url('../images/img_news.jpg') no-repeat center / cover;
-} */
-.news .wrap_more {
-    height: 40px;
+.news .wrap_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.news .wrap_more a {
-    float: right;
+.news .btn_more {
+    display: block;
     background: #FAFAFA;
     border-radius: 6px;
     width: 68px;
     height: 40px;
     line-height: 40px;
     text-align: center;
+}
+.news .inner > .btn_more {
+    display: none;
 }
 .news .wrap_item {
     display: flex;
@@ -790,38 +799,125 @@ h3 {
 }
 .inquiry {
     background: url('../images/img_contact.png') no-repeat center / cover;
-    height: 650px;
+    height: 842px;
 }
 .inquiry .inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: 100%;
     color: #FFFFFF;
 }
-.inquiry h3 {
-    font-size: 45px;
-    font-weight: 800;
-    line-height: 60px;
+.inquiry h2 {
+    display: block;
 }
-.inquiry p {
-    line-height: 26px;
+.inquiry .tit_txt {
+    display: flex;
+    justify-content: space-between;
     margin-top: 12px;
-    font-size: 18px;
-    font-weight: 500;
+}
+.inquiry .tit_txt p {
+    font-size: 20px;
+}
+.inquiry .tit_txt span {
+    font-size: 16px;
     opacity: 0.8;
 }
-.inquiry a {
-    border: 1px solid #FFFFFF;
-    border-radius: 50px;
-    background: transparent;
-    width: 139px;
-    height: 50px;
-    line-height: 50px;
-    color: #FFFFFF;
+.inquiry .tit_txt span em {
+    color: #4C99D3;
+}
+.inquiry .wrap_form {
+    margin: 50px 0 20px;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
     font-size: 20px;
-    text-align: center;
-    text-decoration: none;
+}
+.inquiry .wrap_form > div {
+    padding: 20px 0;
+}
+.inquiry .wrap_form > div + div {
+    border-top: 1px solid #FFFFFF;
+}
+.inquiry .wrap_form .w_f {
+    display: flex;
+    gap: 40px;
+}
+.inquiry .wrap_form .w_f > div {
+    flex: 1;
+}
+.inquiry .wrap_form label {
+    display: inline-block;
+    width: 113px;
+}
+.inquiry .wrap_form label em {
+    color: #4C99D3;
+}
+.inquiry .wrap_form input[type=text] {
+    display: inline-block;
+    background: #FFFFFF;
+    opacity: 0.8;
+    border: none;
+    border-bottom: 1px solid #EBEBEB;
+    width: calc(100% - 120px);
+    height: 50px;
+    padding: 0 14px;
+    color: #333333;
+    font-size: 16px;
+}
+.inquiry .wrap_form input[type=text]:focus,
+.inquiry .wrap_form textarea:focus {
+    background: #FFFFFF;
+    opacity: 1;
+}
+.inquiry .wrap_form input[type=text]::placeholder,
+.inquiry .wrap_form textarea::placeholder {
+    color: #808080;
+    font-size: 16px;
+}
+.inquiry .wrap_form > div:last-of-type label {
+    vertical-align: top;
+    padding-top: 12px;
+}
+.inquiry .wrap_form textarea {
+    display: inline-block;
+    background: #FFFFFF;
+    opacity: 0.8;
+    border: none;
+    border-bottom: 1px solid #EBEBEB;
+    width: calc(100% - 120px);
+    height: 130px;
+    padding: 10px;
+    color: #333333;
+    font-size: 16px;
+    resize: none;
+}
+.inquiry .wrap_check {
+    display: flex;
+    justify-content: space-between;
+}
+.inquiry .wrap_check input[type=checkbox] + label {
+    display: inline-block;
+    background: url('../images/check_unchecked_blue.svg') no-repeat left center / 22px;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 32px;
+    font-size: 16px;
+}
+.inquiry .wrap_check input[type=checkbox]:checked + label {
+    background: url('../images/check_checked_blue.svg') no-repeat left center / 22px;
+}
+.inquiry .wrap_check #btn_more {
+    background: transparent;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.inquiry .wrap_check #inquiry_submit {
+    background: #4C99D3;
+    width: 160px;
+    height: 54px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 
@@ -871,6 +967,20 @@ h3 {
         width: 220px;
         text-align: left;
     }
+    .technology {
+        background: url('../images/img_main_04_tablet.png') top center / cover;
+        height: 998px;
+    }
+    .technology .tablet {
+        visibility: visible;
+    }
+    .technology .desktop, .technology .mobile {
+        visibility: hidden;
+    }
+    .technology img {
+        top: auto;
+        bottom: 80px;
+    }
     .service .wrap_item .wrap_txt {
         height: 140px;
         padding: 20px;
@@ -912,7 +1022,7 @@ h3 {
         width: 100%;
     }
     .inquiry {
-        height: 420px;
+        height: 838px;
     }
     .inquiry .inner {
         flex-direction: column;
@@ -920,6 +1030,20 @@ h3 {
         align-items: start;
         gap: 50px;
         padding: 100px;
+    }
+    .inquiry .tit_txt {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .inquiry .wrap_form {
+        margin-top: 30px;
+    }
+    .inquiry .wrap_form label {
+        display: none;
+    }
+    .inquiry .wrap_form input[type=text],
+    .inquiry .wrap_form textarea {
+        width: 100%;
     }
 
 } 
@@ -980,6 +1104,8 @@ h3 {
         font-size: 15px;
     }
     .technology {
+        background: url('../images/img_main_04_mobile.png') top center / cover;
+        height: 832px;
         margin-top: 60px;
     }
     .technology .txt {
@@ -988,6 +1114,15 @@ h3 {
     .technology .txt:nth-of-type(2) {
         margin: 40px 0 24px;
         text-align: center;
+    }
+    .technology .mobile {
+        visibility: visible;
+    }
+    .technology .desktop, .technology .tablet {
+        visibility: hidden;
+    }
+    .technology img {
+        bottom: 42px;
     }
     .service h2 + h5 {
         margin-top: 24px;
@@ -1038,6 +1173,16 @@ h3 {
     .news {
         padding: 60px 0;
     }
+    .news .wrap_item {
+        margin-top: 24px;
+    }
+    .news .wrap_top a {
+        display: none;
+    }
+    .news .inner > .btn_more {
+        display: block;
+        margin: 36px auto 0;
+    }
     .contact .wrap_map {
         gap: 30px;
         margin-top: 24px;
@@ -1057,31 +1202,126 @@ h3 {
         font-size: 15px;
     }
     .inquiry {
-        height: 180px;
+        height: auto;
     }
     .inquiry .inner {
         gap: 12px;
-        padding: 28px;
+        padding: 60px 20px;
     }
-    .inquiry h3 {
-        font-size: 22px;
-        line-height: 28px;
+    .inquiry .tit_txt {
+        gap: 6px;
     }
-    .inquiry p {
-        margin-top: 6px;
+    .inquiry .tit_txt p {
         font-size: 15px;
-        line-height: 23px;
     }
-    .inquiry a {
-        width: 113px;
-        height: 44px;
-        line-height: 44px;
-        font-size: 16px;
+    .inquiry .tit_txt span {
+        font-size: 14px;
+    }
+    .inquiry .wrap_form {
+        margin-top: 24px;
+    } 
+    .inquiry .wrap_form .w_f {
+        flex-direction: column;
+        gap: 0;
+    }
+    .inquiry .wrap_form .w_f > div + div {
+        border-top: 1px solid #FFFFFF;
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+    .inquiry .wrap_check {
+        flex-direction: column;
+        gap: 36px;
+    }
+    .inquiry .wrap_check #btn_more {
+        display: block;
+        padding-left: 32px;
+    }
+    .inquiry .wrap_check #inquiry_submit {
+        width: 100%;
     }
 } 
 
 
 /* news */
+.news_list .inner {
+    margin-top: 64px;
+    padding: 60px 0;
+}
+.news_list .list {
+    margin-top: 30px;
+}
+.news_list .list .num {
+    font-size: 13px;
+}
+.news_list .list .num span {
+    color: #4C99D3;
+}
+.news_list .list table {
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1.5px solid #222222;
+}
+.news_list .list table tr td {
+    border-bottom: 1px solid #DDDDDD;
+}
+.news_list .list table tr td {
+    padding: 16px 0;
+}
+.news_list .list table td a {
+    display: flex;
+    gap: 24px;
+}
+.news_list .list table td .wrap_img {
+    width: 240px;
+    height: 145px;
+    overflow: hidden;
+}
+.news_list .list table td .wrap_img img {
+    width: 240px;
+    height: 100%;
+    transition: 0.6s;
+}
+.news_list .list table td:hover img {
+    transform: scale(1.1);
+}
+.news_list .list table td .wrap_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+.news_list .list table td .wrap_txt strong {
+    font-size: 20px;
+    font-weight: 700;
+    
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.news_list .list table td .wrap_txt p {
+    margin-top: 6px;
+    color: #AAAAAA;
+    font-size: 15px;
+    font-weight: 400;
+    
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.news_list .list table td .wrap_txt span {
+    color: #AAAAAA;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* news-view */
 .news-view .news-head {
     text-align: center;
 }
@@ -1143,7 +1383,45 @@ h3 {
 .news-view .news-btn a:hover {
     background: #F4F4F4;
 }
+@media (max-width: 1280px) {
+    .news_list .inner {
+        padding: 60px;
+    }
+}
 @media (max-width: 650px) { 
+    .news_list .inner {
+        margin-top: 0;
+        padding: 60px 20px;
+    }  
+    .news_list .list {
+        margin-top: 20px;
+    }
+    .news_list .list table tr td {
+        padding: 12px 5px;
+    }
+    .news_list .list table td a {
+        display: block;
+    }
+    .news_list .list table td .wrap_img,
+    .news_list .list table td .wrap_txt p {
+        display: none;
+    }
+    .news_list .list table td .wrap_txt {
+        gap: 6px;
+    }
+    .news_list .list table td .wrap_txt strong {
+        font-size: 16px;
+        font-weight: 500;
+
+        width: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+
+
     .news-view .news-head {
         text-align: left;
     }
@@ -1170,141 +1448,12 @@ h3 {
 
 
 
-/* contact */
-.contact .wrap_tit {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 24px;
-}
-.contact .wrap_tit h2 {
-    font-size: 30px;
-}
-.contact .wrap_tit span {
-    color: #AAAAAA;
-    font-size: 15px;
-}
-.contact .group + .group {
-    margin-top: 36px;
-}
-.contact .group b {
-    display: block;
-    margin-bottom: 12px;
-    font-size: 18px;
-    font-weight: 600;
-}
-.contact .group b span {
-    display: inline-block;
-    margin-left: 4px;
-    color: #AAAAAA;
-    font-size: 15px;
-}
-.contact .group .wrap_check {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px 26px;
-}
-.contact .group .wrap_check input[type=checkbox] + label {
-    display: inline-block;
-    background: url('../images/checkbox_unchecked.svg') no-repeat left center / 24px;
-    height: 24px;
-    padding-left: 40px;
-    font-size: 16px;
-    line-height: 24px;
-    cursor: pointer;
-}
-.contact .group .wrap_check input[type=checkbox]:checked + label {
-    background: url('../images/checkbox_checked.svg') no-repeat left center / 24px;
-}
-.contact .group .wrap_flex {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px 20px;
-}
-.contact .group .wrap_flex span {
-    position: relative;
-    width: 510px;
-    height: 70px;
-    border-bottom: 1px solid #EBEBEB;
-}
-.contact .group .wrap_flex span input {
-    width: 100%;
-    height: 100%;
-    padding-left: 80px;
-    border: none;
-}
-.contact .group .wrap_flex span label {
-    position: absolute;
-    left: 19px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #AAAAAA;
-    font-size: 16px;
-    font-weight: 600;
-}
-.contact .group textarea {
-    width: 100%;
-    height: 200px;
-    border: none;
-    border-bottom: 1px solid #EBEBEB;
-    resize: none;
-    margin-top: 12px;
-}
-.contact .group textarea::placeholder {
-    color: #AAAAAA;
-    font-size: 16px;
-    font-weight: 600;
-}
-.contact .agree {
-    margin-top: 24px;
-}
-.contact .agree input[type=checkbox] + label {
-    display: inline-block;
-    background: url('../images/checkbox_square_unchecked.svg') no-repeat left center / 20px;
-    height: 20px;
-    padding-left: 32px;
-    color: #808080;
-    font-size: 16px;
-    line-height: 20px;
-    cursor: pointer;
-}
-.contact .agree input[type=checkbox]:checked + label {
-    background: url('../images/checkbox_square_checked.svg') no-repeat left center / 20px;
-}
-.contact .agree input[type=checkbox] + label span {
-    text-decoration: underline;
-}
-.contact .agree label button {
-    background: #FFFFFF;
-    color: #808080;
-    font-size: 16px;
-    text-decoration: underline;
-}
-.contact .wrap_btn {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 60px;
-}
-.contact .wrap_btn button {
-    width: 160px;
-    height: 54px;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: 600;
-}
-.contact .wrap_btn .btn_white {
-    background: #FFFFFF;
-    border: 1px solid #DDDDDD;
-    color: #AAAAAA;
-}
-.contact .wrap_btn .btn_black {
-    background: #000719;
-    color: #FFFFFF;
-}
 /* contact modal */
 .modal-open {
     overflow: hidden;
+}
+#privacy {
+    color: #333333;
 }
 #privacy .modal-dialog {
     position: absolute;
@@ -1370,9 +1519,6 @@ h3 {
 }
 
 @media (max-width: 1280px) { 
-    .contact .group .wrap_flex span {
-        width: 100%;
-    }
     #privacy .modal-dialog {
         width: 630px;
     }
@@ -1381,30 +1527,7 @@ h3 {
     }
 }
 @media (max-width: 650px) { 
-    .contact .wrap_tit {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 6px;
-    }
-    .contact .wrap_tit h2 {
-        font-size: 28px;
-    }
-    .contact .group .wrap_check input[type=checkbox] + label {
-        font-size: 15px;
-    }
-    .contact .group .wrap_check {
-        flex-direction: column;
-        gap: 24px;
-    }
-    .contact .group + .group {
-        margin-top: 24px;
-    }
-    .contact .group .wrap_flex span {
-        height: 60px;
-    }
-    .contact .group .wrap_flex span label {
-        font-size: 15px;
-    }
+    
     #privacy .modal-dialog {
         width: 335px;
         height: 545px;

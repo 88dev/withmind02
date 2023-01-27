@@ -1,0 +1,168 @@
+
+
+
+
+/* contact */
+.contact .wrap_tit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.contact .wrap_tit h2 {
+    font-size: 30px;
+}
+.contact .wrap_tit span {
+    color: #AAAAAA;
+    font-size: 15px;
+}
+.contact .group + .group {
+    margin-top: 36px;
+}
+.contact .group b {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.contact .group b span {
+    display: inline-block;
+    margin-left: 4px;
+    color: #AAAAAA;
+    font-size: 15px;
+}
+.contact .group .wrap_check {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 26px;
+}
+.contact .group .wrap_check input[type=checkbox] + label {
+    display: inline-block;
+    background: url('../images/checkbox_unchecked.svg') no-repeat left center / 24px;
+    height: 24px;
+    padding-left: 40px;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+}
+.contact .group .wrap_check input[type=checkbox]:checked + label {
+    background: url('../images/checkbox_checked.svg') no-repeat left center / 24px;
+}
+.contact .group .wrap_flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+}
+.contact .group .wrap_flex span {
+    position: relative;
+    width: 510px;
+    height: 70px;
+    border-bottom: 1px solid #EBEBEB;
+}
+.contact .group .wrap_flex span input {
+    width: 100%;
+    height: 100%;
+    padding-left: 80px;
+    border: none;
+}
+.contact .group .wrap_flex span label {
+    position: absolute;
+    left: 19px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #AAAAAA;
+    font-size: 16px;
+    font-weight: 600;
+}
+.contact .group textarea {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-bottom: 1px solid #EBEBEB;
+    resize: none;
+    margin-top: 12px;
+}
+.contact .group textarea::placeholder {
+    color: #AAAAAA;
+    font-size: 16px;
+    font-weight: 600;
+}
+.contact .agree {
+    margin-top: 24px;
+}
+.contact .agree input[type=checkbox] + label {
+    display: inline-block;
+    background: url('../images/checkbox_square_unchecked.svg') no-repeat left center / 20px;
+    height: 20px;
+    padding-left: 32px;
+    color: #808080;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.contact .agree input[type=checkbox]:checked + label {
+    background: url('../images/checkbox_square_checked.svg') no-repeat left center / 20px;
+}
+.contact .agree input[type=checkbox] + label span {
+    text-decoration: underline;
+}
+.contact .agree label button {
+    background: #FFFFFF;
+    color: #808080;
+    font-size: 16px;
+    text-decoration: underline;
+}
+.contact .wrap_btn {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 60px;
+}
+.contact .wrap_btn button {
+    width: 160px;
+    height: 54px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.contact .wrap_btn .btn_white {
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    color: #AAAAAA;
+}
+.contact .wrap_btn .btn_black {
+    background: #000719;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1280px) { 
+    .contact .group .wrap_flex span {
+        width: 100%;
+    }
+}
+@media (max-width: 650px) { 
+    .contact .wrap_tit {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+    .contact .wrap_tit h2 {
+        font-size: 28px;
+    }
+    .contact .group .wrap_check input[type=checkbox] + label {
+        font-size: 15px;
+    }
+    .contact .group .wrap_check {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .contact .group + .group {
+        margin-top: 24px;
+    }
+    .contact .group .wrap_flex span {
+        height: 60px;
+    }
+    .contact .group .wrap_flex span label {
+        font-size: 15px;
+    }
+}

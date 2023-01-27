@@ -6,6 +6,7 @@
 <meta http-equiv='Content-Security-Policy' content='upgrade-insecure-requests'>
 <link rel='styleSheet' href='./css/reset.css' type='text/css'></link>
 <link rel='styleSheet' href='./css/style.css' type='text/css'></link>
+<link rel='styleSheet' href='./css/web.5fa3ac6c.css' type='text/css'></link>
 <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
 <link href="https://font.elice.io/EliceDigitalBaeum.css" rel="stylesheet" />
@@ -101,7 +102,9 @@
             <h4>TECHNOLOGY</h4>
             <h2>기술력</h2>
             <p class="txt">총 8개의 AI엔진이 탑재된 AI 플랫폼 API를 통해,<br>위드마인드만의 차별화된 기술 서비스를 제공하고 있습니다.</p>
-            <img src="./images/img_tech.png" />
+            <img src="./images/img_tech.png" class="desktop" />
+            <img src="./images/img_tech_tablet.png" class="tablet" />
+            <img src="./images/img_tech_mobile.png" class="mobile" />
         </section>
     </section>
     <section class="service" id="service">
@@ -273,8 +276,10 @@
     <section class="news" id="news">
         <section class="inner">
             <h4>NEWS</h4>
-            <h2>새소식</h2>
-            <div class="wrap_more"><a href="./news.html">더보기</a></div>
+            <div class="wrap_top">
+                <h2>새소식</h2>
+                <a href="./news.html" class="btn_more">더보기</a>
+            </div>
             <section class="wrap_item">
                 <a href="./news-view.html" class="item">
                     <div class="wrap_img">
@@ -310,6 +315,7 @@
                     </div>
                 </a>
             </section>
+            <a href="./news.html" class="btn_more">더보기</a>
         </section>
     </section>
     <section class="client">
@@ -423,11 +429,78 @@
     </section>
     <section class="inquiry">
         <section class="inner">
-            <div>
-                <h3>제휴 문의하기</h3>
-                <p>문의하실 내용을 보내주시면,<br>확인후 최대한 빠른 시일 내 답변을 드리도록 하겠습니다.</p>
+            <h2>문의하기</h2>
+            <div class="tit_txt">
+                <p>문의하실 내용을 보내주시면, 확인후 최대한 빠른 시일 내 답변을 드리도록 하겠습니다.</p>
+                <span><em>*</em> 표시는 필수 입력 항목입니다.</span>
             </div>
-            <a href="./contact.html">문의하기 →</a>
+            <form>
+                <section class="wrap_form">
+                    <div class="w_f">
+                        <div>
+                            <label><em>*</em> 성명</label>
+                            <input type="text" id="in_name" />
+                        </div>
+                        <div>
+                            <label><em>*</em> 회사/조직</label>
+                            <input type="text" id="in_company" />
+                        </div>
+                    </div>
+                    <div class="w_f">
+                        <div>
+                            <label><em>*</em> 연락처</label>
+                            <input type="text" id="in_tel" />
+                        </div>
+                        <div>
+                            <label><em>*</em> 이메일</label>
+                            <input type="text" id="in_email" />
+                        </div>
+                    </div>
+                    <div>
+                        <label><em>*</em> 문의 제목</label>
+                        <input type="text" id="in_title" />
+                    </div>
+                    <div>
+                        <label><em>*</em> 문의 내용</label>
+                        <textarea id="in_contents"></textarea>
+                    </div>
+                </section>
+                <div class="wrap_check">
+                    <div>
+                        <input type="checkbox" id="check" />
+                        <label for="check">개인정보 수집 및 이용목적에 동의합니다. </label>
+                        <button type="button" id="btn_more" class="btn btn-primary" data-toggle="modal" data-target="#privacy">[자세히 보기]</button>
+                    </div>
+                    <button type="button" id="inquiry_submit">문의하기</button>
+                </div>
+            </form>
+
+            <!-- Modal -->
+            <div class="modal fade" id="privacy" tabindex="-1" role="dialog" aria-hidden="true" data-keyboard="false">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <button type="button" class="close modal_close" data-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-body">
+                            <h2>개인정보 수집 및 이용</h2>
+                            <h3>개인정보의 수집 및 이용 목적</h3>
+                            <p>㈜위드마인드는 개인정보보호법 및 정보통신망 이용촉진 및 정보보호등에 관한 법률에 따라 정보 주체의 개인정보 및 권익을 보호하고 개인정보와 관련한 정보주체의 고충을 원활하게 처리할 수 있도록 다음과 같은 처리방침을 두고 있습니다. 회사가 수집한 개인정보는 다음의 목적을 위해 활용합니다.</p>
+                            <h4>1. 문의접수 및 처리결과 회신</h4>
+                            <h5>수집하는 개인정보 항목 및 수집방법</h5>
+                            <h5>[수집하는 개인정보 항목]</h5>
+                            <p>신청여부 식별 및 최적화 된 서비스 제공을 위해 아래와 같은 정보를 수집합니다. 이름, 연락처, 이메일, 회사명</p>
+                            <h5>[수집 방법]</h5>
+                            <p>홈페이지 자료/상담신청을 통한 수집<br>
+                                개인정보의 보유 및 이용기간<br>
+                                원칙적으로 개인정보 수집 및 이용 목적이 달성된 후에는<br>
+                                해당 정보를 지체없이 파기합니다.</p>
+                        </div>
+                        <div class="wrap_btn">
+                            <button type="button" class="btn_black" data-dismiss="modal" aria-label="Close" onclick="check()">확인 및 승인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </section>
     <footer>
@@ -457,11 +530,16 @@
         </section>
     </footer>
 </body>
+<script src='./js/web.5fa3ac6c.js'></script>
 <script src='./js/jquery-3.4.1.min.js'></script>
 <script type="text/javascript" src="./plugin/delighters.js"></script>
 <script src='./js/common.js'></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
+    function check(){
+        console.log("check");
+        $("#check").prop("checked", true);
+    }
 </script>
 </html>

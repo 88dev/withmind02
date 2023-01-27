@@ -90,7 +90,31 @@ $(document).ready(function() {
         $(".history_cont > section").hide();
         $(".history_cont > section").eq(idx).show();
     });
-
     
+    if($(window).width() < 1280) { 	
+        $('#in_name').attr("placeholder", "*성명");
+        $('#in_company').attr("placeholder", "*회사/조직");
+        $('#in_tel').attr("placeholder", "*연락처");
+        $('#in_email').attr("placeholder", "*이메일");
+        $('#in_title').attr("placeholder", "*문의 제목");
+        $('#in_contents').attr("placeholder", "*문의 내용");
+    }
+    $( window ).resize( function() {
+        if($(window).width() < 1280) { 	
+            $('#in_name').attr("placeholder", "*성명");
+            $('#in_company').attr("placeholder", "*회사/조직");
+            $('#in_tel').attr("placeholder", "*연락처");
+            $('#in_email').attr("placeholder", "*이메일");
+            $('#in_title').attr("placeholder", "*문의 제목");
+            $('#in_contents').attr("placeholder", "*문의 내용");
+        } else {
+            $('#in_name').attr("placeholder", "");
+            $('#in_company').attr("placeholder", "");
+            $('#in_tel').attr("placeholder", "");
+            $('#in_email').attr("placeholder", "");
+            $('#in_title').attr("placeholder", "");
+            $('#in_contents').attr("placeholder", "");
+        }
+    });
 
 });
