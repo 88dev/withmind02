@@ -1008,6 +1008,9 @@ h3 {
     .history_cont > section:nth-of-type(3) .wrap_flex div:first-of-type span {
         background: url('../images/img_history_03.png') no-repeat center / cover;
     }
+    .news .wrap_item .item {
+        max-width: calc(50% - 10px);
+    }
     .client .wrap_marquee .marquee .marquee__group {
         gap: 36px;
     }
@@ -1087,7 +1090,6 @@ h3 {
         margin-top: 12px;
         font-size: 15px;
     }
-
     .value {
         padding-top: 60px;
     }
@@ -1170,11 +1172,11 @@ h3 {
     .history_cont .wrap_flex div > b {
         margin-bottom: 3px;
     }
-    .news {
-        padding: 60px 0;
-    }
     .news .wrap_item {
         margin-top: 24px;
+    }
+    .news .wrap_item .item {
+        max-width: 100%;
     }
     .news .wrap_top a {
         display: none;
