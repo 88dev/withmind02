@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name='viewport' content='width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0' />
+<meta http-equiv='Content-Security-Policy' content='upgrade-insecure-requests'>
+<link rel='styleSheet' href='/withmind/withmind2022/00.default/css/reset.css' type='text/css'></link>
+<!-- <link rel='styleSheet' href='./css/style.css' type='text/css'></link> -->
+<title></title>
+
+<style>
+    .inner {
+        max-width: 100%;
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 100px 0;
+    }
+    .service .wrap_item {
+        display: grid;
+        grid-template-areas:
+            'pri biz uni'
+            'sokind fhe care';
+        grid-template-columns: 1fr 1fr 1fr;
+        border: 1px solid rgba(238, 238, 238, 0.5);
+    }
+    .service .wrap_item .item {
+        position: relative;
+        height: 300px;
+        border: 1px solid rgba(238, 238, 238, 0.5);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .service .wrap_item .pri {
+        grid-area: pri;
+    }
+    .service .wrap_item .biz {
+        grid-area: biz;
+    }
+    .service .wrap_item .uni {
+        grid-area: uni;
+    }
+    .service .wrap_item .sokind {
+        grid-area: sokind;
+    }
+    .service .wrap_item .fhe {
+        grid-area: fhe;
+    }
+    .service .wrap_item .care {
+        grid-area: care;
+    }
+    .service .wrap_item .item span {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: #EEEEEE;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .service .wrap_item .item strong {
+        font-size: 26px;
+        font-weight: 600;
+        margin: 24px 0 16px;
+    }
+    .service .wrap_item .item p {
+        margin: 0;
+        color: #555555;
+        font-size: 16px;
+        text-align: center;
+    }
+    .service .wrap_item .item p b {
+        color: #333333;
+    }
+
+    @media (max-width: 1280px) { 
+        .service .wrap_item {
+            grid-template-areas:
+                'pri biz'
+                'uni sokind'
+                'fhe care';
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 650px) { 
+        .service .wrap_item {
+            grid-template-areas:
+                'pri'
+                'biz'
+                'uni'
+                'sokind'
+                'fhe'
+                'care';
+            grid-template-columns: 1fr;
+        }
+    }
+
+
+
+
+
+    .news .wrap_item {
+        border: 1px solid red;
+
+        display: grid;
+        grid-template-areas:
+            'news1 news2 news3';
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+    }
+    .news .wrap_item .item {
+        border: 1px solid blue;
+        height: 385px;
+    }
+    .news .wrap_item .news1 {
+        grid-area: news1;
+    }
+    .news .wrap_item .news2 {
+        grid-area: news2;
+    }
+    .news .wrap_item .news3 {
+        grid-area: news3;
+    }
+    @media (max-width: 1280px) { 
+        .news .wrap_item {
+            grid-template-areas:
+                'news1 news2'
+                'news3';
+        }
+    }
+    @media (max-width: 650px) { 
+        .news .wrap_item {
+            grid-template-areas:
+                'news1'
+                'news2'
+                'news3';
+            grid-template-columns: 1fr;
+        }
+    }
+
+
+
+</style>
+
+</head>
+<body>
+
+    <section class="service" id="service">
+        <section class="inner">
+            <h4>SERVICE</h4>
+            <h2>서비스</h2>
+            <section class="wrap_item">
+                <div class="item pri">
+                    <span>AI HR+</span>
+                    <img src="./images/img_service01.svg" alt="">
+                    <strong>IM & IM-PRI</strong>
+                    <p>취업/입시 준비를 위한<br><b>AI 면접 연습</b> 서비스</p>
+                </div>
+                <div class="item biz">
+                    <span>AI HR+</span>
+                    <img src="./images/img_service02.svg" alt="">
+                    <strong>IM-BIZ</strong>
+                    <p>채용 공고 등록부터 면접 결과 분석까지,<br>기업을 위한 <b>AI 채용 면접</b> 서비스</p>
+                </div>
+                <div class="item uni">
+                    <span>AI HR+</span>
+                    <img src="./images/img_service03.svg" alt="">
+                    <strong>IM-UNI</strong>
+                    <p>기업을 위한 양방향<br><b>AI 화상 면접</b> 서비스</p>
+                </div>
+                <div class="item sokind">
+                    <span>AI HR+</span>
+                    <img src="./images/img_service04.svg" alt="">
+                    <strong>AI HR교육</strong>
+                    <p>AI분석을 통한 효과적인 직원교육,<br>AI 서비스직 트레이닝 솔루션</p>
+                </div>
+                <div class="item fhe">
+                    <span>Data Security</span>
+                    <img src="./images/img_service05.svg" alt="">
+                    <strong>FHE Cloud Drive </strong>
+                    <p>완전동형암호 기반<br>클라우드 드라이브 서비스</p>
+                </div>
+                <div class="item care">
+                    <span>AI Healthcare</span>
+                    <img src="./images/img_service06.svg" alt="">
+                    <strong>인지중재 치료 서비스</strong>
+                    <p>다중 영역 인지기능 향상<br>프로그램 시스템 구축</p>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <section class="history" id="history">
+        <section class="inner">
+            <h4>HISTORY</h4>
+            <h2>연혁</h2>
+            <p>위드마인드는 2017년 설립 이래, 매년 기술 발전과 사업 성장을 이루고 있습니다.  </p>
+            <section>
+
+            </section>
+        </section>
+    </section>
+
+    <section class="news" id="news">
+        <section class="inner">
+            <h4>NEWS</h4>
+            <h2>새소식</h2>
+            <section class="wrap_item">
+                <div class="item news1"></div>
+                <div class="item news2"></div>
+                <div class="item news3"></div>
+            </section>
+        </section>
+    </section>
+
+
+
+
+</body>
+<script src='http://code.jquery.com/jquery-latest.min.js'></script>
+<script>
+
+</script>
+</html>
