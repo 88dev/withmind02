@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .history .wrap_history {
+                display: flex;
+                gap: 108px;
+            }
+            .history .wrap_history .history_title {
+                display: flex;
+                flex-direction: column;
+                gap: 36px;
+                text-align: left;
+            }
+            .history .wrap_history .history_title li {
+                list-style: none;
+
+                color: #E0E1E2;
+                font-size: 24px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+            .history .wrap_history .history_title li.on {
+                color: #333333;
+            }
+            .history .wrap_history .history_cont {
+                clear: both;
+            }
+            .history .wrap_history .history_cont section {
+                display: none;
+            }
+            .history .wrap_history .history_cont section.on {
+                display: block;
+                display: flex;
+                flex-direction: column;
+            }
+            .history .wrap_history .history_cont section div {
+                display: flex;
+                gap: 80px;
+            }
+            .history .wrap_history .history_cont section div:first-of-type {
+                position: relative;
+                padding-bottom: 74px;
+            }
+            .history .wrap_history .history_cont section div:first-of-type::before {
+                position: absolute;
+                content: '';
+                top: 11.5px;
+                left: 8px;
+                border-left: 1px dashed #4C99D3;
+                width: 1px;
+                height: 100%;
+            }
+            .history .wrap_history .history_cont section dl {
+                margin: 0;
+            }
+            .history .wrap_history .history_cont section strong {
+                position: relative;
+                padding-left: 32px;
+                color: #4C99D3;
+                font-size: 20px;
+                font-weight: 700;
+            }
+            .history .wrap_history .history_cont section strong::before {
+                position: absolute;
+                content: '';
+                background: url('./images/img_history_circle.svg') no-repeat;
+                left: 0;
+                top: 7px;
+                width: 16px;
+                height: 16px;
+            }
+            .history .wrap_history .history_cont section dl dt {
+                color: #808080;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 27px;
+            }
+            .history .wrap_history .history_cont section dl dt + dt {
+                margin-top: 16px;
+            }
+            .history .wrap_history .history_cont section dl dt b {
+                display: inline-block;
+                margin-right: 10px;
+                color: #333333;
+                font-weight: 700;
+            }
+            .history .wrap_history .history_cont section dl dt span {
+                display: inline-block;
+                width: 43px;
+            }
+            @media (max-width: 1280px) { 
+                .history .wrap_history {
+                    flex-direction: column;
+                    gap: 36px;
+                }
+                .history .wrap_history .history_title {
+                    flex-direction: row;
+                    padding-left: 0;
+                }
+            }
+            @media (max-width: 650px) { 
+                .history .wrap_history .history_cont section div {
+                    flex-direction: column;
+                    gap: 12px;
+                }
+                .history .wrap_history .history_cont section strong {
+                    padding-left: 0;
+                }
+                .history .wrap_history .history_cont section strong::before,
+                .history .wrap_history .history_cont section div:first-of-type::before {
+                    display: none;
+                }
+                .history .wrap_history .history_cont section div:first-of-type {
+                    padding-bottom: 24px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section class="history">
+            <section class="wrap_history">
+                <ul class="history_title">
+                    <li class="on">2021 ~ 현재</li>
+                    <li>2019 ~ 2020</li>
+                    <li>2017 ~ 2018</li>
+                </ul>
+                <section class="history_cont">
+                    <section class="on">
+                        <div>
+                            <strong>2022</strong>
+                            <dl>
+                                <dt><b>12월</b>국제 공동 R&D 선정</dt>
+                                <dt><b>08월</b>SBA 전체 입주 스타트업 기업 면접 서비스 제공</dt>
+                                <dt><b>06월</b>동부화재, 청호나이스 영업자 HR 교육 서비스 협의</dt>
+                                <dt><b>05월</b>(주)미듬에듀 기업 직무교육 플랫폼 사업화 제휴</dt>
+                                <dt><b>01월</b>싱가포르 법인설립(에듀샐러드) </dt>
+                                <dt><span></span>메타버스 기반 AI 화상면접 출시</dt>
+                            </dl>
+                        </div>
+                        <div>
+                            <strong>2021</strong>
+                            <dl>
+                                <dt><b>10월</b>대덕특구 엑셀러레이팅 선정</dt>
+                                <dt><b>03월</b>AI HR 교육 서비스 개발</dt>
+                                <dt><b>01월</b>총10개 R&D 수행 (총 과제 규모 약 20억)</dt>
+                                <dt><span></span>(주)위드마인드 서울지점 설립</dt>
+                                <dt><span></span>IBK창공(N15) 액셀러레이팅 선정</dt>
+                            </dl>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
+                            <strong>2020</strong>
+                            <dl>
+                                <dt><b>11월</b>TIPS 선정</dt>
+                                <dt><b>10월</b>ETRI 영상 분석 기술 이전</dt>
+                                <dt><span></span>(주)위드마인드 대전 연구개발특구 연구소기업 등록</dt>
+                                <dt><b>08월</b>ETRI Holdings 투자 유치</dt>
+                                <dt><b>02월</b>고려대학교 자연어 분석 기술 개발 협력</dt>
+                                <dt><b>01월</b>20개 기관/기업 AI 면접 서비스 제공</dt>
+                            </dl>
+                        </div>
+                        <div>
+                            <strong>2019</strong>
+                            <dl>
+                                <dt><b>12월</b>nipa 정보통신진흥원장 상 수상</dt>
+                                <dt><b>08월</b>AI 면접 서비스 ‘IM(아이엠)’ 론칭</dt>
+                                <dt><b>03월</b>서강대 산학협력 음성 감정 분석 딥러닝 기술이전</dt>
+                                <dt><b>01월</b>인지 중재 치료 서비스 ‘SuperBrain’ 시스템 구축</dt>
+                            </dl>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
+                            <strong>2018</strong>
+                            <dl>
+                                <dt><b>12월</b>멀티 모달 AI 분석 시스템 개발</dt>
+                                <dt><b>11월</b>표정 및 행동 AI 분석 기술 협력 개발</dt>
+                                <dt><b>09월</b>영어 발음 교정 APP ‘SPEAKING(스피킹)’ 론칭</dt>
+                                <dt><b>06월</b>AI면접 서비스 개발</dt>
+                                <dt><b>04월</b>기술 전문 기업 협력 R&D (영상분석기술 도입)</dt>
+                            </dl>
+                        </div>
+                        <div>
+                            <strong>2017</strong>
+                            <dl>
+                                <dt><b>12월</b>심리상담사 전용 내담자 관리 CRM 서비스 베타 출시</dt>
+                                <dt><span></span>분당 서울대병원 음성 감정 분석 임상 테스트</dt>
+                                <dt><b>11월</b>음성 기반 감정 분석 기술 개발</dt>
+                                <dt><b>08월</b>기업부설 연구소 설립</dt>
+                                <dt><b>07월</b>음성데이터 기반 감정 분석 APP ‘Milli(밀리)’</dt>
+                                <dt><span></span>(주)위드마인드 설립</dt>
+                            </dl>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+    </body>
+    <script src='http://code.jquery.com/jquery-latest.min.js'></script>
+    <script>
+        $(document).ready(function() {
+            $(".history_title li").click(function() {
+                let idx = $(this).index();
+                $(".history_title li").removeClass("on");
+                $(".history_title li").eq(idx).addClass("on");
+                $(".history_cont > section").hide();
+                $(".history_cont > section").eq(idx).show();
+            });
+        });
+    </script>
+</html>
