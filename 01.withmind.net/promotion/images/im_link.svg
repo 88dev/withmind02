@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="330" height="110" viewBox="0 0 330 110">
+  <defs>
+    <filter id="bg-txt" x="0" y="0" width="330" height="110" filterUnits="userSpaceOnUse">
+      <feOffset dx="4" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#9e9e9e" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="그룹_20424" data-name="그룹 20424" transform="translate(-760 -2037.627)">
+    <g transform="matrix(1, 0, 0, 1, 760, 2037.63)" filter="url(#bg-txt)">
+      <rect id="bg-txt-2" data-name="bg-txt" width="300" height="80" rx="10" transform="translate(11 10)" fill="#fff"/>
+    </g>
+    <text id="IM_바로가기" data-name="IM 바로가기" transform="translate(801 2096.625)" fill="#333" font-size="24" font-family="NotoSansKR-Medium, Noto Sans KR" font-weight="500" letter-spacing="-0.035em"><tspan x="0" y="0">IM </tspan><tspan y="0">바로가기</tspan></text>
+    <g id="right-arrow" transform="translate(1004.991 1951.337)">
+      <g id="그룹_20423" data-name="그룹 20423" transform="translate(0 127.369)">
+        <path id="패스_9819" data-name="패스 9819" d="M35.274,135.722h0l-8.07-8.07a.807.807,0,1,0-1.138,1.138l6.69,6.7H.807a.807.807,0,0,0,0,1.614H32.756l-6.69,6.69a.807.807,0,1,0,1.138,1.138l8.07-8.07A.807.807,0,0,0,35.274,135.722Z" transform="translate(0 -127.369)"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name='viewport' content='width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0' />
+<meta http-equiv='Content-Security-Policy' content='upgrade-insecure-requests'>
+<link rel='styleSheet' href='./css/style.css' type='text/css'></link>
+<title></title>
+</head>
+<body>
+    <section class="promotion">
+        <h1><img src="./images/img_logo.png" /></h1>
+        <section class="contents">
+            <section class="wrap_tab tab_name">
+                <ul class="tab_title">
+                    <li class="on">
+                        <p>취업면접 준비를 위한 AI 모의면접</p>
+                        <strong>인터뷰 마스터 IM</strong>
+                    </li>
+                    <li>
+                        <p>기업의 인재 선별을 돕는 AI 채용면접</p>
+                        <strong>IM-BIZ</strong>
+                    </li>
+                </ul>
+                <section class="tab_cont">
+                    <section class="on">
+                        <img src="./images/im_pri.jpg" alt="아이엠 프리" />
+                        <a href="https://interviewmaster.kr/ai/" class="im_link" target="_blank"></a>
+                    </section>
+                    <section>
+                        <img src="./images/im_biz.png" alt="아이엠 비즈" />
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+</body>
+<script src='./js/jquery-3.4.1.min.js'></script>
+<script>
+    $(document).ready(function() {
+        $(".tab_title li").click(function() {
+            var idx = $(this).index();
+            $(".tab_title li").removeClass("on");
+            $(".tab_title li").eq(idx).addClass("on");
+            $(".tab_cont > section").hide();
+            $(".tab_cont > section").eq(idx).show();
+        });
+    });
+</script>
+</html>
