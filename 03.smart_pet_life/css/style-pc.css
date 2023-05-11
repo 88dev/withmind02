@@ -189,14 +189,14 @@
     background-size: contain;
   }
   .container .wrap section article.top .visual {
-    width: 26.95454545rem;
+    width: 25.682rem;
     height: 35.81818182rem;
     display: inline-block;
     background-repeat: no-repeat;
     background-image: url('../img/pc/img_mockup_sec1.png');
     background-size: contain;
     position: absolute;
-    top: 0.86363636rem;
+    top: 3.091rem;
     margin-left: -27.27272727rem;
   }
   .container .wrap section article.arti {
