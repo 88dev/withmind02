@@ -16,19 +16,19 @@ window.onload = function() {
     })
   });
 
-  let privacy = document.querySelector('.privacy');
-  let terms = document.querySelector('.terms');
-  let popup = document.querySelector('.popup');
-  let close = popup.querySelector('.popup .close');
-  privacy.addEventListener('click', function() {
-    popup.classList.add('p-pop');
-  });
-  terms.addEventListener('click', function() {
-    popup.classList.add('t-pop');
-  });
-  close.addEventListener('click', function() {
-    popup.classList.remove('p-pop', 't-pop');
-  });
+  // let privacy = document.querySelector('.privacy');
+  // let terms = document.querySelector('.terms');
+  // let popup = document.querySelector('.popup');
+  // let close = popup.querySelector('.popup .close');
+  // privacy.addEventListener('click', function() {
+  //   popup.classList.add('p-pop');
+  // });
+  // terms.addEventListener('click', function() {
+  //   popup.classList.add('t-pop');
+  // });
+  // close.addEventListener('click', function() {
+  //   popup.classList.remove('p-pop', 't-pop');
+  // });
 
   var mov = document.querySelectorAll('[mov]');
   function movCheck() {
