@@ -281,9 +281,6 @@
   .container .wrap section article.care .txt {
     color: #fff;
   }
-  /* .container .wrap section article.care .gather-img .img-box.ib2 {
-    padding-top: 10.41666667vw;
-  } */
   .container .wrap section article.care .gather-img .img-box span.img1 {
     background-repeat: no-repeat;
     background-image: url('../img/t/arti1-1.png');
@@ -339,10 +336,6 @@
     background-size: contain;
     height: 53.38541667vw;
   }
-
-
-
-
   .container .wrap section article.schedule {
     background-color: #103831;
   }
@@ -354,9 +347,6 @@
   .container .wrap section article.schedule .gather-img {
     position: relative;
   }
-  /* .container .wrap section article.schedule .gather-img .img-box {
-    vertical-align: middle;
-  } */
   .container .wrap section article.schedule .gather-img .img-box.ib1 {
     margin-top: 0vw;
     margin-right: 3.90625vw;
@@ -403,45 +393,6 @@
     height: 55.339vw;
     margin-bottom: 0vw;
   }
-  /* .container .wrap section article.compare .gather-img .img-box {
-    vertical-align: middle;
-  }
-  .container .wrap section article.compare .gather-img .img-box.ib1 {
-    margin-top: 0vw;
-    margin-right: 3.90625vw;
-    margin-bottom: 0vw;
-    margin-left: -1.30208333vw;
-  }
-  .container .wrap section article.compare .gather-img .img-box span.img1 {
-    background-repeat: no-repeat;
-    background-image: url('../img/t/arti3-1.png');
-    background-size: contain;
-    width: 39.0625vw;
-    height: 82.03125vw;
-    margin-bottom: 0vw;
-  }
-  .container .wrap section article.compare .gather-img .img-box span.img2 {
-    background-repeat: no-repeat;
-    background-image: url('../img/t/arti3-2.png');
-    background-size: contain;
-    width: 40.625vw;
-    height: 38.02083333vw;
-    margin-top: 1.30208333vw;
-    margin-right: 0vw;
-    margin-bottom: 0vw;
-    margin-left: 0vw;
-  }
-  .container .wrap section article.compare .gather-img .img-box span.img3 {
-    background-repeat: no-repeat;
-    background-image: url('../img/t/arti3-3.png');
-    background-size: contain;
-    width: 40.625vw;
-    height: 38.02083333vw;
-    margin-top: -1.30208333vw;
-    margin-right: 0vw;
-    margin-bottom: 0vw;
-    margin-left: -10.41666667vw;
-  } */
   .container .wrap section article.app {
     width: 100vw;
     height: 59.896vw;

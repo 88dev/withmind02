@@ -5,13 +5,10 @@
     openMallAlertModal(false);
   });
 
-  /* edit by buck : 모달 열기 */
-  document.querySelector('a.link-to-mall').addEventListener('click' , () =>{
-    openMallAlertModal(true);
-  });
-
-
-
+  let modal = document.querySelectorAll('.link-to-mall');
+  for(let i = 0; i < modal.length; i++){
+    modal[i].addEventListener("click",openMallAlertModal);
+  }
 
 /* edit by buck */
 function openMallAlertModal( show ){

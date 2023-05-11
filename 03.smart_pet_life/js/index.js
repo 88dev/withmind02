@@ -1,7 +1,6 @@
 window.onload = function() {
   let header = document.querySelector('header');
   let menu = document.querySelector('.menu');
-  let back = document.querySelector('.back');
   menu.addEventListener('click', function() {
     if(header.classList.contains('open')) {
       header.classList.remove('open');
@@ -15,20 +14,6 @@ window.onload = function() {
       header.classList.remove('open');
     })
   });
-
-  // let privacy = document.querySelector('.privacy');
-  // let terms = document.querySelector('.terms');
-  // let popup = document.querySelector('.popup');
-  // let close = popup.querySelector('.popup .close');
-  // privacy.addEventListener('click', function() {
-  //   popup.classList.add('p-pop');
-  // });
-  // terms.addEventListener('click', function() {
-  //   popup.classList.add('t-pop');
-  // });
-  // close.addEventListener('click', function() {
-  //   popup.classList.remove('p-pop', 't-pop');
-  // });
 
   var mov = document.querySelectorAll('[mov]');
   function movCheck() {
