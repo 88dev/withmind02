@@ -21,7 +21,7 @@ body {
   color: #fff;
 }
 .popup .holder .inner .tit {
-  font-size: 7.22222222vw;
+  font-size: 26px;
   line-height: 8.61111111vw;
   margin-bottom: 11.11111111vw;
   font-weight: 600;
@@ -36,7 +36,7 @@ body {
   margin-left: 0vw;
 }
 .popup .holder .inner .txt {
-  font-size: 4.16666667vw;
+  font-size: 16px;
   line-height: 8.33333333vw;
   letter-spacing: -0.27777778vw;
   color: #ccc;
@@ -65,7 +65,7 @@ body {
     color: #fff;
   }
   .popup .holder .inner .tit {
-    font-size: 3.90625vw;
+    font-size: 26px;
     line-height: 4.6875vw;
     margin-bottom: 5.20833333vw;
     font-weight: 600;
@@ -80,7 +80,7 @@ body {
     margin-left: 0vw;
   }
   .popup .holder .inner .txt {
-    font-size: 1.953125vw;
+    font-size: 16px;
     line-height: 3.90625vw;
     letter-spacing: -0.13020833vw;
     color: #ccc;
@@ -112,7 +112,7 @@ body {
     color: #fff;
   }
   .popup .holder .inner .tit {
-    font-size: 1.45454545rem;
+    font-size: 30px;
     line-height: 1.72727273rem;
     margin-bottom: 2.27272727rem;
     font-weight: 600;
@@ -127,7 +127,7 @@ body {
     margin-left: 0rem;
   }
   .popup .holder .inner .txt {
-    font-size: 0.72727273rem;
+    font-size: 16px;
     line-height: 1.59090909rem;
     letter-spacing: -0.04545455rem;
     color: #ccc;
