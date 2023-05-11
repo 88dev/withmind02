@@ -211,16 +211,6 @@ body.locked{
         line-height: 22px;
         letter-spacing: -1px;
         text-align: center;
-        margin-bottom: 6px;
-    }
-
-    .mall-modal .modal-body p.txt-b{
-        color : rgba(85, 85, 85, 1);
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 22px;
-        letter-spacing: -1px;
-        text-align: center;
     }
 
     .container .wrap footer .footer-body {
