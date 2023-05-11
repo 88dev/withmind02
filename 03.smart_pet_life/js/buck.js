@@ -1,6 +1,5 @@
-
-
-  /* edit by buck : 모달 내 닫기 버튼 -> 모달 닫기*/
+// alert 사용으로 해당 스크립트 미사용
+/* edit by buck : 모달 내 닫기 버튼 -> 모달 닫기*/
   document.querySelector('.mall-modal button.btn-close-modal').addEventListener('click' , () =>{
     openMallAlertModal(false);
   });
