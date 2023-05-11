@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name='viewport' content='width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0' />
+<meta http-equiv='Content-Security-Policy' content='upgrade-insecure-requests'>
+<link rel='styleSheet' href='/withmind/withmind2022/00.default/css/reset.css' type='text/css'></link>
+<title></title>
+<style>
+    *,*::after,*::before{
+  margin:0;
+  box-sizing:border-box;
+}
+
+html,body{
+  height:100%;
+  width:100%;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+section{
+  display:flex;
+  padding:0px 10px;
+  max-width:800px;
+  margin:0px auto;
+}
+
+aside{
+  flex: 0 0 70%;
+  display:flex;
+  flex-direction:column;
+  margin:0px auto;
+}
+
+.info__box{
+  background:#fff;
+  max-width:800px;
+  padding:10px 20px;
+  margin:30px 5px;
+  border-radius:6px;
+  cursor:pointer;
+  display:flex;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12),
+            0 2px 4px 0 rgba(0,0,0,0.08);
+}
+
+
+.info__text_one{
+  width:100%;
+  height:20px;
+  border-radius:4px;
+}
+
+.info__text_two{
+  width:70%;
+  height:20px;
+  border-radius:4px;
+}
+
+.info__text_three{
+  width:85%;
+  height:20px;
+  border-radius:4px;
+}
+
+.left_box{
+  flex:0 0 70%;
+  margin-right:auto;
+}
+
+.image{
+  height:80px;
+  width:80px;
+  border-radius:25px;
+}
+
+.shinny{
+  background:lightgray;
+  margin:10px 0px;
+  position:relative;
+  overflow:hidden;
+}
+
+.shinny::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  background:rgba(255,255,255,0.2);
+  height:100%;
+  transform:skew(5deg);
+  animation:shine infinite 1.5s ease-in-out;
+}
+
+
+@keyframes shine {
+  from {
+  transform:skew(0deg) translateX(0%);
+  }
+  
+  to{
+    transform:skew(0deg) translateX(200%);
+  }
+}
+
+</style>
+</head>
+<body>
+
+    <section>
+        <aside>
+            <div class="info__box">
+                <div class="left_box">
+                    <p class="shinny info__text_one"></p>
+                    <p class="shinny info__text_two"></p>
+                    <p class="shinny info__text_three"></p>
+                </div>
+            </div>
+        </aside>
+    </section>
+
+    <div class="info__box">
+        <div class="left_box">
+            <p class="shinny info__text_one"></p>
+            <p class="shinny info__text_two"></p>
+            <p class="shinny info__text_three"></p>
+        </div>
+    </div>
+
+</body>
+<script src='http://code.jquery.com/jquery-latest.min.js'></script>
+<script>
+
+</script>
+</html>

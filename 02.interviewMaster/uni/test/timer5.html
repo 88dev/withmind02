@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name='viewport' content='width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0' />
+<meta http-equiv='Content-Security-Policy' content='upgrade-insecure-requests'>
+<link rel='styleSheet' href='/withmind/withmind2022/00.default/css/reset.css' type='text/css'></link>
+<title></title>
+<style>
+    body {
+        background: rgba(0, 0, 0, 0.7);
+    }
+    .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: #1E9AE867;
+        background: rgba(255, 255, 255, 0.14);
+        overflow: hidden;
+    }
+    .demi-droit, .demi-gauche {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-color: transparent;
+        overflow: hidden;
+    }
+    .demi-droit::after, .demi-gauche::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(30, 154, 232, 0.67);
+    }
+    .demi-droit {
+        left: 50%;
+        right: 0;
+    }
+    .demi-droit::after {
+        right: 100%;
+        transform-origin: center right;
+        animation: turn 5s linear forwards;
+    }
+    .demi-gauche {
+        left: 0;
+        right: 50%;
+    }
+    .demi-gauche::after {
+        left: 100%;
+        transform-origin: center left;
+        animation: turn 5s 5s linear forwards;
+    }
+    @keyframes turn {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(180deg);
+        }
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <span class="demi-droit"></span>
+        <span class="demi-gauche"></span>
+    </div>
+
+    <div class="timer">10</div>
+
+</body>
+<script src='http://code.jquery.com/jquery-latest.min.js'></script>
+<script>
+    var timer = 10;
+
+    var interval = setInterval(function() {
+        timer--;
+        $('.timer').text(timer);
+        if (timer === 0) clearInterval(interval);
+    }, 1000);
+</script>
+</html>

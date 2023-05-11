@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name='viewport' content='width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0' />
+<meta http-equiv='Content-Security-Policy' content='upgrade-insecure-requests'>
+<link rel='styleSheet' href='/withmind/withmind2022/00.default/css/reset.css' type='text/css'></link>
+<link rel='styleSheet' href='./css/mail.css' type='text/css'></link>
+<link rel='styleSheet' href='./css/web.5fa3ac6c.css' type='text/css'></link>
+<title></title>
+</head>
+<body>
+
+    <section class="wrap_modal">
+        <div class="modal fade" id="mail_result" tabindex="-1" role="dialog" aria-hidden="true" data-keyboard="false" data-backdrop="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <strong>결과 안내</strong>
+                        <button type="button" class="close modal_close" data-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <b>면접 결과</b>
+                            <div>
+                                <input type="radio" name="result" id="pass" />
+                                <label for="pass">합격</label>
+                                <input type="radio" name="result" id="fail" />
+                                <label for="fail">불합격</label>
+                            </div>
+                        </div>
+                        <div>
+                            <b>이메일 내용</b>
+                            <textarea>
+안녕하세요. 강이름님. 
+(주)무한상사 채용담당자입니다.
+
+[지원자명] 님 화상면접 결과 합격 하였음을 알려드립니다.
+
+-기업명 : ㈜무한상사 
+-채용공고 : 2021년 상반기 영업/서비스직 공개채용 
+- 면접 일시 : 2023-02-15 10:00 
+- 면접결과 : 합격
+                            </textarea>
+                        </div>
+                        <div class="wrap_btn">
+                            <button type="button" class="btn_gray">취소</button>
+                            <button type="button" class="btn_purple">등록</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src='./js/jquery-3.4.1.min.js'></script>
+<script src='./js/web.5fa3ac6c2.js'></script>
+<script>
+    $(document).ready(function(){
+        $("#mail_result").modal("show");
+    });
+</script>
+</html>

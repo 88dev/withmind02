@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name='viewport' content='width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0' />
+<meta http-equiv='Content-Security-Policy' content='upgrade-insecure-requests'>
+<link rel='styleSheet' href='/withmind/withmind2022/00.default/css/reset.css' type='text/css'></link>
+<title></title>
+<style>
+    body {
+  background-color: #333;
+}
+
+#countdown {
+  margin: 10px;
+  height: 160px;
+  width: 160px;
+}
+
+svg circle#c2 {
+  stroke-dasharray: 113px;
+  stroke-dashoffset: 0px;
+  stroke: #198051;
+  animation: countdown 30s linear infinite forwards;
+}
+
+svg circle#c3 {
+  stroke: #198051;
+  opacity: .3;
+}
+
+circle#c1 {
+  fill: lime;
+  animation: rotate 30s linear infinite forwards;
+}
+
+svg text {
+  font-family: sans-serif;
+  fill: white;
+  font-weight: bold;
+  dominant-baseline: middle;
+  text-anchor: middle;
+  font-size: 12px;
+}
+
+@keyframes countdown {
+  from {
+    stroke-dashoffset: 0px;
+  }
+  to {
+    stroke-dashoffset: 113px;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+</style>
+</head>
+<body>
+
+    <div id="countdown">
+        <svg viewBox="0 0 40 40">
+            <g transform="translate(20 20) rotate(-90)"
+                    stroke-width="4" fill="none" stroke-linecap="round">
+                    <circle id="c3" r="18"/>
+                    <circle id="c2" r="18"/>
+                    <circle id="c1" r="2" cx="18"/>
+            </g>
+            <text x="20" y="20">46</text>
+        </svg>
+    </div>
+
+</body>
+<script src='http://code.jquery.com/jquery-latest.min.js'></script>
+<script>
+
+</script>
+</html>

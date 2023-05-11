@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <fieldset>
+            <legend>대출신청</legend>
+            <label for="loanPossible">대출가능금액</label> <input type="text" id="loanPossible" class="text" /> 원
+            <label for="loanRequest">대출신청금액</label> <input type="text" id="loanRequest" class="text" /> 원
+            <label for="phone">연락가능 전화번호</label> <input type="text" id="phone" title="지역번호" class="text" />
+            <input type="text" title="앞번호" class="text" />
+            <input type="text" title="뒷번호" class="text" />
+            <span>계좌선택</span>
+            <label for="accountSelectA">등록된 송금계좌</label>
+            <input type="radio" name="accountSelect" id="accountSelectA" />
+            <label for="accountSelectB">보험료 자동이체 계좌(3회이상)</label>
+            <input type="radio" name="accountSelect" id="accountSelectB"/>
+            <label for="question">문의사항</label> <textarea cols="" rows="" id="question"></textarea">
+            <input type="image" src="btn_confirm.gif" alt="확인">
+        </fieldset>
+    </form> 
+    
+</body>
+</html>

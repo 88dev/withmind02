@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name='viewport' content='width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0' />
+<meta http-equiv='Content-Security-Policy' content='upgrade-insecure-requests'>
+<link rel='styleSheet' href='/withmind/withmind2022/00.default/css/reset.css' type='text/css'></link>
+<title></title>
+<style>
+    @property --percentage {
+        initial-value: 100%;
+        inherits: false;
+        syntax: "<percentage>";
+    }
+body {
+  background:black;
+}
+.timer {
+  background: conic-gradient(white var(--percentage), transparent 0);
+  border-radius: 50%;
+  width: 50vmin;
+  height: 50vmin;
+  animation: timer 10s linear;
+}
+
+@keyframes timer {
+  to {
+    --percentage: 0%;
+  }
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+</style>
+</head>
+<body>
+    <div class="timer"></div>
+</body>
+<script src='http://code.jquery.com/jquery-latest.min.js'></script>
+<script>
+
+</script>
+</html>

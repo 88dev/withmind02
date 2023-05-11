@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name='viewport' content='width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0' />
+<meta http-equiv='Content-Security-Policy' content='upgrade-insecure-requests'>
+<title></title>
+<style>
+    :root {
+        --angle: 10deg;
+    }
+    .wrap_timer {
+        position: relative;
+        background: rgba(0,0,0,0.7);
+        width: 100vw;
+        height: 100vh;
+    }
+    .wrap_timer .cont {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .wrap_timer .cont .circle {
+        position: relative;
+        background: rgba(255, 255, 255, 0.14);
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        margin: 0 auto;
+    }
+    .wrap_timer .cont .circle .conic {
+        /* --angle: 10deg; */
+        background: conic-gradient(transparent var(--angle), rgba(30, 154, 232, 0.67) var(--angle));
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+    }
+    .wrap_timer .cont .circle .conic .timer {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #FFFFFF;
+        font-size: 40px;
+    }
+    .wrap_timer .cont p {
+        margin-top: 24px;
+        color: #FFFFFF;
+        font-size: 20px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <section class="wrap_timer">
+        <section class="cont">
+            <div class="circle">
+                <div class="conic">
+                    <span class="timer">10</span>
+                </div>
+            </div>
+            <p>곧 면접이 시작됩니다.</p>
+        </section>
+    </section>
+
+</body>
+<script src='http://code.jquery.com/jquery-latest.min.js'></script>
+<script>
+
+    let angle = 0;
+    let arrowInterval = setInterval(function(){
+        document.querySelector('.conic').style.setProperty('--angle', ++angle + "deg");
+    }, 28);
+
+    let timer = 10;
+    let interval = setInterval(function() {
+        timer--;
+        $('.timer').text(timer);
+        if (timer === 0) clearInterval(interval);
+    }, 1000);
+
+</script>
+</html>
+
+<!-- https://codepen.io/artyschein/pen/MWYYYOQ -->

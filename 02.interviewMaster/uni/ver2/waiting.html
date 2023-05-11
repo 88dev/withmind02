@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name='viewport' content='width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0' />
+<meta http-equiv='Content-Security-Policy' content='upgrade-insecure-requests'>
+<link rel='styleSheet' href='/withmind/withmind2022/00.default/css/reset.css' type='text/css'></link>
+<title></title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    ul li {
+        list-style: none;
+        margin: 0;
+    }
+    body {
+        margin:0;
+        padding: 0;
+    }
+    #interview_code {
+        display: flex;
+        background: #2B3748;
+        width: 100vw;
+        height: 100vh;
+    }
+    #interview_code .wait_left {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        flex: 1.9;
+        background: url("./images/bg_waiting_01.png") no-repeat right top, url("./images/bg_waiting_02.png") no-repeat left bottom;
+        background-size: 380px;
+        padding-top: 164px;
+    }
+    
+    #interview_code .wait_left img:first-of-type {
+        width: 42px;
+    }
+    #interview_code .wait_left b, #interview_code .wait_left strong {
+        display: block;
+        color: #FFFFFF;
+        font-size: 28px;
+        line-height: 40px;
+    }
+    #interview_code .wait_left b {
+        margin-top: 12px;
+        font-weight: normal;
+    }
+    #interview_code .wait_left strong {
+        margin-bottom: 40px;
+    }
+    #interview_code .wait_left img:last-of-type {
+        width: 529px;
+        margin-left: 45px;
+    }
+    #interview_code .wait_right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1.5;
+        background: #FFFFFF;
+        border-radius: 36px 0px 0px 36px;
+        padding: 50px 40px;
+    }
+    #interview_code .wait_right .top {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 26px;
+        font-size: 15px;
+    }
+    #interview_code .wait_right .top .time::before {
+        position: absolute;
+        content: '';
+        background: url("./images/img_waiting_clock.png") no-repeat center / contain;
+        width: 18px;
+        height: 18px;
+        top: 3px;
+        left: 0;
+    }
+    #interview_code .wait_right .top .time span {
+        display: inline-block;
+        margin-left: 8px;
+        color: #00A2F2;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    #interview_code .wait_right .top button {
+        background: url("./images/btn_wating_cancle.png") no-repeat;
+        width: 24px;
+        height: 24px;
+        border: none;
+    }
+    #interview_code .wait_right .contents strong {
+        color: #333333;
+        font-size: 28px;
+        text-align: center;
+        line-height: 40px;
+    }
+    #interview_code .wait_right .contents strong b {
+        display: block;
+        color: #00A2F2;
+    }
+    #interview_code .wait_right .contents ul {
+        margin: 30px 0 40px;
+    }
+    #interview_code .wait_right .contents ul li {
+        background: #F7F7F7;
+        min-width: 370px;
+        border-radius: 7px;
+        padding: 16px 26px;
+        color: #333333;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    #interview_code .wait_right .contents ul li + li {
+        margin-top: 8px;
+    }
+    #interview_code .wait_right .contents ul li span {
+        display: inline-block;
+        width: 85px;
+        color: #555555;
+        font-weight: normal;
+    }
+    #interview_code .wait_right .contents .btn_enter {
+        display: block;
+        width: 300px;
+        height: 54px;
+        background: #111111;
+        border-radius: 7px;
+        color: #FFFFFF;
+        font-size: 16px;
+        margin: 0 auto;
+    }
+    #interview_code .wait_right .wrap_btn {
+        display: flex;
+        gap: 10px;
+    }
+    #interview_code .wait_right .wrap_btn * {
+        width: 180px;
+        height: 50px;
+        border: none;
+        border-radius: 6px;
+        font-size: 15px;
+    }
+    #interview_code .wait_right .wrap_btn #btn_test {
+        background: #EEEEEE;
+        border: none;
+        color: #333333;
+    }
+    #interview_code .wait_right .wrap_btn .btn_guide {
+        background: #009EED;
+        line-height: 50px;
+        color: #FFFFFF;
+        text-decoration: none;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+    <div id="interview_code" class="interview_common_code">
+        <div class="wait_left">
+            <img src="./images/im_logo_white.png" alt="IM 로고" />
+            <b>실시간 AI 화상면접 서비스</b>
+            <strong>인터뷰마스터 IM-UNI 출시</strong>
+            <img src="./images/img_waiting.png" alt="IM-UNI 출시 이미지">
+        </div>
+        <div class="wait_right">
+            <div class="top">
+                <div class="time">면접 시작까지 남은 시간<span>00 : 15</span></div>
+                <button type="button" class="btn_back"></button>
+            </div>
+            <div class="contents">
+                <strong>
+                    <b>(주)무한상사</b>
+                    화상면접이 곧 시작됩니다.
+                </strong>
+                <ul>
+                    <li><span>기업명</span>(주)무한상사</li>
+                    <li><span>공고명</span>2023년 ICT 인턴십 채용 공고</li>
+                    <li><span>면접일정</span>2023-02-15 10:00 ~ 11:00 (1시간)</li>
+                    <li><span>면접자</span>홍길동</li>
+                </ul>
+                <button type="button" class="btn_enter">입장하기</button>
+            </div>
+            <div class="wrap_btn">
+                <button type="button" class="btn_test" id="btn_test">환경 테스트 하기</button>
+                <a href="/uniGuide_interviewer" class="btn_guide" target="_blank">화상면접 이용 가이드</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src='http://code.jquery.com/jquery-latest.min.js'></script>
+<script>
+
+</script>
+</html>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_25791" data-name="사각형 25791" width="24" height="24" transform="translate(0 0)" fill="#fff" stroke="#bbb" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="ico_trashbin" transform="translate(-696 -594)">
+    <circle id="타원_589" data-name="타원 589" cx="15" cy="15" r="15" transform="translate(696 594)" fill="#fff"/>
+    <g id="ico_trashbin-2" data-name="ico_trashbin" transform="translate(699 597)" clip-path="url(#clip-path)">
+      <g id="trash-delete-bin" transform="translate(4 4)">
+        <path id="패스_8980" data-name="패스 8980" d="M3,5.2H19M4.778,5.2V16.4A1.7,1.7,0,0,0,6.556,18h8.889a1.7,1.7,0,0,0,1.778-1.6V5.2m-9.778,0V3.6A1.7,1.7,0,0,1,9.222,2h3.556a1.7,1.7,0,0,1,1.778,1.6V5.2" transform="translate(-3 -2)" fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path id="패스_8981" data-name="패스 8981" d="M14,11v5.033" transform="translate(-4.222 -3.95)" fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path id="패스_8982" data-name="패스 8982" d="M10,11v5.033" transform="translate(-3.778 -3.95)" fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

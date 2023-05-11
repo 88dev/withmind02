@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name='viewport' content='width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0' />
+<meta http-equiv='Content-Security-Policy' content='upgrade-insecure-requests'>
+<link rel='styleSheet' href='/withmind/withmind2022/00.default/css/reset.css' type='text/css'></link>
+<title></title>
+<style>
+    *,
+*:before,
+*:after {
+	box-sizing: border-box;
+	border-radius: 0;
+	margin: 0;
+	outline: none;
+	padding: 0;
+}
+body {
+	height: 100vh;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+.spinner {
+    border-color: #000;
+    border-style: solid;
+    border-width: 3em / 10;
+    background: #000;
+    border-radius: 100%;
+    height: 3em;
+    overflow: hidden;
+    position: relative;
+    width: 3em;
+}
+	.spinner:before,
+	.spinner:after,
+	.spinner .mask {
+		border-radius: 3em 0 0 3em;
+		content: '';
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		transform-origin: 100% 50%;
+		width: 50%;
+	}
+	.spinner:before {
+		background: #FFF;
+		animation: spinner-rotate 3s linear infinite;
+	}
+	.spinner:after {
+		background: #000;
+		animation: spinner-opacity 3s steps(1, end) infinite;
+	}
+	.spinner .mask {
+		background: #FFF;
+		border-radius: 0 3em 3em 0;
+		left: 50%;
+		animation: spinner-opacity 3s steps(1, end) infinite reverse;
+	}
+	@keyframes spinner-rotate {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+	@keyframes spinner-opacity {
+		0% {
+			opacity: 1;
+		}
+		50%,
+		100% {
+			opacity: 0;
+		}
+	}
+
+</style>
+</head>
+<body>
+
+    <div class="spinner">
+        <div class="mask"></div>
+    </div>
+
+</body>
+<script src='http://code.jquery.com/jquery-latest.min.js'></script>
+<script>
+
+</script>
+</html>

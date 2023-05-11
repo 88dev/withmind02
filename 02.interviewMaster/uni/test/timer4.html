@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name='viewport' content='width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes,initial-scale=1.0' />
+<meta http-equiv='Content-Security-Policy' content='upgrade-insecure-requests'>
+<link rel='styleSheet' href='/withmind/withmind2022/00.default/css/reset.css' type='text/css'></link>
+<title></title>
+<style>
+    .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .item h2 {
+        width: 160px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    svg {
+        transform: rotate(-90deg);
+    }
+    .circle_animation {
+        stroke-dasharray: 440; /* this value is the pixel circumference of the circle */
+        stroke-dashoffset: 0;
+        transition: all 1s linear;
+    }
+</style>
+</head>
+<body>
+
+    <div class="item">
+        <h2>time</h2>
+        <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+            <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#6fdb6f" fill="none"/>
+        </svg>
+    </div>
+
+</body>
+<script src='http://code.jquery.com/jquery-latest.min.js'></script>
+<script>
+
+    let time = 10;//seconds
+let i = 0;
+let finalOffset = 440;// the length of strokedasharray ( pixel circumference of the circle -> css )
+let step = finalOffset/time;
+let timeCaption = document.querySelector( 'h2' );
+let circle = document.querySelector( '.circle_animation' ).style;
+
+circle.strokeDashoffset = 0;
+timeCaption.innerText = time;
+
+var interval = setInterval( () => {
+  timeCaption.innerText = time - i;
+  if ( i++ == time ) {
+    clearInterval( interval );
+    } else {
+    circle.strokeDashoffset = step * i;
+  };
+}, 1000 );
+
+</script>
+</html>

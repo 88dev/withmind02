@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="icon_close_wh" transform="translate(0 0)">
+    <g id="close">
+      <rect id="사각형_24731" data-name="사각형 24731" width="16" height="16" transform="translate(16 16) rotate(180)" fill="#fff" opacity="0"/>
+      <path id="패스_8155" data-name="패스 8155" d="M14.723,13.063l5.061-5.05a1.182,1.182,0,1,0-1.671-1.671L13.064,11.4,8.014,6.342A1.182,1.182,0,0,0,6.342,8.014l5.061,5.05-5.061,5.05a1.182,1.182,0,1,0,1.671,1.671l5.05-5.061,5.05,5.061a1.182,1.182,0,1,0,1.671-1.671Z" transform="translate(-5.064 -5.064)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
