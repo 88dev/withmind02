@@ -447,7 +447,7 @@
     background-repeat: no-repeat;
     background-image: url('../img/t/img_bg_sec05.png');
     background-size: contain;
-    text-align: center;
+    text-align: left;
     padding-top: 20.44270833vw;
     padding-right: 0vw;
     padding-bottom: 20.44270833vw;
@@ -455,6 +455,7 @@
   }
   .container .wrap section article.app .t-tit,
   .container .wrap section article.app h3 {
+    padding-left: 7.813vw;
     color: #fff;
   }
   .container .wrap section article.app .t-tit {
@@ -468,6 +469,7 @@
   }
   .container .wrap section article.app .app-stores {
     margin-top: 5.20833333vw;
+    padding-left: 7.813vw;
   }
   .container .wrap section article.app .app-stores a {
     margin-top: 0vw;
