@@ -336,6 +336,7 @@
     background-size: contain;
     height: 18.22727273rem;
     filter: drop-shadow(4px 4px 40px rgba(51, 51, 51, 0.2));
+    margin-top: 0;
   }
   .container .wrap section article.care .gather-img .img-box span.img2 {
     background-repeat: no-repeat;

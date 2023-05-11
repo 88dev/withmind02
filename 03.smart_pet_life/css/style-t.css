@@ -289,6 +289,7 @@
     background-image: url('../img/t/arti1-1.png');
     background-size: contain;
     height: 44.66145833vw;
+    margin-top: 19.531vw;
   }
   .container .wrap section article.care .gather-img .img-box span.img2 {
     background-repeat: no-repeat;
