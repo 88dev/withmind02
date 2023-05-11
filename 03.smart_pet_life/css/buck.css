@@ -103,7 +103,8 @@ body.locked{
 .container .wrap footer .info {
     text-align: unset;
     display: flex;
-    gap : 3vw;
+    gap: 3vw;
+    
 }
 
 .container .wrap footer .footer-body {
@@ -241,6 +242,10 @@ body.locked{
     .container .wrap footer .footer-body p.txt-a{
         margin-bottom : 1rem;
         max-width: 40rem;
+    }
+
+    .container .wrap footer .info {
+        justify-content: flex-end;
     }
 
     .popup .holder .inner {

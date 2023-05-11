@@ -498,7 +498,7 @@ h3 {
   display: inline-block;
 }
 .container .wrap footer .info {
-  float: right;
+  /* float: right; */
   text-align: right;
 }
 .container .wrap footer .info a {
