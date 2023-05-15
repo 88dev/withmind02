@@ -283,7 +283,7 @@
   }
   .container .wrap section article.care .gather-img .img-box span.img1 {
     background-repeat: no-repeat;
-    background-image: url('../img/t/arti1-1.png');
+    background-image: url('../img/t/arti1-1.svg');
     background-size: contain;
     height: 44.66145833vw;
     margin-top: 19.531vw;
@@ -296,13 +296,13 @@
   }
   .container .wrap section article.care .gather-img .img-box span.img3 {
     background-repeat: no-repeat;
-    background-image: url('../img/t/arti1-3.png');
+    background-image: url('../img/t/arti1-3.svg');
     background-size: contain;
     height: 27.99479167vw;
   }
   .container .wrap section article.care .gather-img .img-box span.img4 {
     background-repeat: no-repeat;
-    background-image: url('../img/t/arti1-4.png');
+    background-image: url('../img/t/arti1-4.svg');
     background-size: contain;
     height: 60.67708333vw;
   }
@@ -314,25 +314,25 @@
   }
   .container .wrap section article.manage .gather-img .img-box span.img1 {
     background-repeat: no-repeat;
-    background-image: url('../img/t/arti2-1.png');
+    background-image: url('../img/t/arti2-1.svg');
     background-size: contain;
     height: 69.01041667vw;
   }
   .container .wrap section article.manage .gather-img .img-box span.img2 {
     background-repeat: no-repeat;
-    background-image: url('../img/t/arti2-2.png');
+    background-image: url('../img/t/arti2-2.svg');
     background-size: contain;
     height: 17.31770833vw;
   }
   .container .wrap section article.manage .gather-img .img-box span.img3 {
     background-repeat: no-repeat;
-    background-image: url('../img/t/arti2-3.png');
+    background-image: url('../img/t/arti2-3.svg');
     background-size: contain;
     height: 22.78645833vw;
   }
   .container .wrap section article.manage .gather-img .img-box span.img4 {
     background-repeat: no-repeat;
-    background-image: url('../img/t/arti2-4.png');
+    background-image: url('../img/t/arti2-4.svg');
     background-size: contain;
     height: 53.38541667vw;
   }
