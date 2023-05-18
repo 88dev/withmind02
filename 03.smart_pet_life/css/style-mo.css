@@ -554,4 +554,14 @@ h3 {
   background-size: contain;
   background-repeat: no-repeat;
 }
+.container .wrap article.link3 .store .ios {
+  background-image: url("../img/mo/btn_appstore_gr.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.container .wrap article.link3 .store .aos {
+  background-image: url("../img/mo/btn_googleplay_gr.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 /*# sourceMappingURL=style-mo.css.map */
