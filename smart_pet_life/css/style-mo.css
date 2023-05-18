@@ -473,4 +473,95 @@ h3 {
 .container .wrap footer .info a:last-child {
   margin-bottom: 0vw;
 }
+
+.container .wrap article.link {
+  width: 100vw;
+  max-width: 48rem;
+  height: 100%;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  padding-top: 22.2223vw;
+  padding-bottom: 8.333vw;
+}
+.container .wrap article.link4 {
+  background-color: #E2DACF;
+}
+.container .wrap article.link .img {
+  display: block;
+  height: 88.89vw;
+}
+.container .wrap article.link .img1 {
+  background-image: url("../img/mo/link1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.container .wrap article.link .img2 {
+  background-image: url("../img/mo/link2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.container .wrap article.link .img3 {
+  background-image: url("../img/mo/link3.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-top: 8.889vw;
+}
+.container .wrap article.link .img4 {
+  background-image: url("../img/mo/link4.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.container .wrap article.link strong {
+  display: block;
+  margin-top: 8.889vw;
+  font-size: 7.778vw;
+  text-align: center;
+}
+.container .wrap article.link3 strong {
+  margin-top: 0;
+}
+.container .wrap article.link p {
+  display: block;
+  margin-top: 2.778vw;
+  color: #666666;
+  font-size: 4.167vw;
+  text-align: center;
+}
+.container .wrap article.link p b {
+  color: #333333;
+}
+.container .wrap article.link .store {
+  display: flex;
+  justify-content: center;
+  gap: 3.333vw;
+  margin-top: 17.778vw;
+}
+.container .wrap article.link .store a {
+  width: 154px;
+  height: 56px;
+}
+.container .wrap article.link .store .ios {
+  background-image: url("../img/mo/btn_appstore_bk.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.container .wrap article.link .store .aos {
+  background-image: url("../img/mo/btn_googleplay_bk.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.container .wrap article.link3 .store .ios {
+  background-image: url("../img/mo/btn_appstore_gr.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.container .wrap article.link3 .store .aos {
+  background-image: url("../img/mo/btn_googleplay_gr.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 /*# sourceMappingURL=style-mo.css.map */
